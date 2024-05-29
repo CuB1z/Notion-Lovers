@@ -1,0 +1,62 @@
+:root {
+  /* Global Variables */
+  --max-width: 1200px;
+  --max-content-width: 800px;
+
+  /* Color Variables */
+  --primary-color: #537178;
+  --light-primary: #e1e8ed;
+  --dark-primary: #27323b;
+  --accent-color: #ff0000;
+  --text-color: #000000;
+  --text-color-light: #333333;
+  --background-color: #f0f0f0;
+
+  /* Sidebar Variables */
+  --sidebar-width: 300px;
+  --sidebar-background: #f0f0f0;
+  --sidebar-border: 1px solid #dadada;
+  --sidebar-border-color: #dadada;
+  --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --sidebar-text-color: var(--text-color); 
+
+  /* Button Variables */
+  --button-background: #ff0000;
+  --button-color: #f0f0f0;
+
+  --button-background-hover: #f0f0f0;
+  --button-color-hover: #ff0000;
+
+  /* Nav Variables*/
+  --nav-background: var(--background-color);
+  --nav-text-color: var(--text-color);
+  --nav-height: 75px;
+
+  /* Footer Variables */
+  --footer-background: #000000;
+  --footer-text-color: var(--light-primary);
+  --footer-height: 50px;
+
+  /* Home Variables */
+  --home-background: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--dark-primary) var(--light-primary);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}

@@ -1,7 +1,12 @@
 {
+  "include": ["**/*", "layouts/Layout.jsx"],
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./public/styles/*"],
+      "@utils/*": ["./utils/*"],
+      "@layouts/*": ["./layouts/*"],
     }
   }
 }

@@ -1,0 +1,17 @@
+.a {
+    width: fit-content;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--button-background);
+    color: var(--button-color);
+    border: 1px solid var(--button-background);
+
+    transition: all 0.2s;
+}
+
+.a:hover {
+    cursor: pointer;
+    transform: translate(2px, -2px);
+}

@@ -1,0 +1,18 @@
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: var(--footer-height);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+}
+
+.footer .cool_text {
+    font-style: italic;
+}

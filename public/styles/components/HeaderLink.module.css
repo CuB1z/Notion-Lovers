@@ -1,0 +1,26 @@
+.a {
+    height: 100%;
+    width: 100px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 3px transparent solid;
+    transition: ease 0.3s;
+}
+
+.a.active {
+    border-color: var(--accent-color);
+}
+
+.a:hover {
+    border-color: var(--accent-color);
+}
+
+.a:visited {
+    color: var(--text-color);
+}
