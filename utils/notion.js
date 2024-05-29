@@ -15,11 +15,10 @@ async function getPages() {
 
     const pages = []
     for (const page of query.results) {
-        console.log(page)
         pages.push({
             id: page.id,
             title: page.properties.title.title[0].plain_text,
-            tags: {name: page.properties.tags.select.name, color: page.properties.tags.select.color},
+            tag: {name: page.properties.tags.select.name, color: page.properties.tags.select.color},
         })
     }
 
