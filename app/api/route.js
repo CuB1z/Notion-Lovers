@@ -1,9 +1,11 @@
 import { NextResponse } from "next/server"
-import { getPages } from "@/utils/notion"
+import { getPages, getChildDatabasePages } from "@/utils/notion"
 
 // To handle a GET request to /api
 export async function GET(request) {
-    const pages = await getPages()
+    const id = request.nextUrl.searchParams.get("id")
+    const pages = id ? await getChildDatabasePages(id) : await getPages()
+
     return NextResponse.json(pages, { status: 200 })
 }
 

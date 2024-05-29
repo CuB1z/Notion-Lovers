@@ -5,7 +5,6 @@ import Card from "@/components/Card"
 export default async function Page() {
     const response = await fetch(`${process.env.PUBLIC_API_URL}`)
     const data = await response.json()
-    console.log(data)
     data.sort((a, b) => a.tag.name.localeCompare(b.tag.name))
 
     return (

@@ -48,10 +48,10 @@
   scrollbar-width: thin;
   scroll-behavior: smooth;
   scrollbar-color: var(--dark-primary) var(--light-primary);
+  font-family: sans-serif;
 }
 
 body {
-  font-family: sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
