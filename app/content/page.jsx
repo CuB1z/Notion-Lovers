@@ -1,8 +1,8 @@
 import GridLayout from "@components/GridLayout"
+import { getPages } from "@/utils/notion"
 
 export default async function Page() {
-    const response = await fetch(`${process.env.PUBLIC_API_URL}`)
-    const data = await response.json()
+    const data = await getPages()
     data.sort((a, b) => a.tag.name.localeCompare(b.tag.name))
 
     return (
