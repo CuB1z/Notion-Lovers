@@ -35,9 +35,7 @@ export default async function Page({ params }) {
 
     return (
         <Layout
-            children={
-                <NotionPage recordMap={content} rootPageId={id} />
-            }>
+            children={ <NotionPage recordMap={content} rootPageId={id} /> }>
         </Layout>
     )
 }

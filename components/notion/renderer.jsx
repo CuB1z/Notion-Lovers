@@ -1,9 +1,12 @@
 "use client"
 import { NotionRenderer } from 'react-notion-x'
-import Collection from './components/Collection'
-import Code from './components/Code'
 import 'react-notion-x/src/styles.css'
 import 'katex/dist/katex.min.css'
+
+// Import custom components
+import Collection from './components/Collection'
+import Code from './components/Code'
+import Equation from './components/Equation'
 
 export const NotionPage = ({ recordMap, rootPageId }) => {
   if (!recordMap) {
@@ -21,6 +24,7 @@ export const NotionPage = ({ recordMap, rootPageId }) => {
         components={{
           Collection: Collection,
           Code: Code,
+          Equation: Equation,
         }}
       />
     </div>
