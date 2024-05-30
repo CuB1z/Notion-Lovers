@@ -1,4 +1,5 @@
 import styles from "@styles/components/HomeCard.module.css"
+import Image from "next/image"
 
 export default function HomeCard({ title, description, image, imageSide, children }) {
     let imagePosition = imageSide === "left" ? "row-reverse" : "row"
@@ -12,7 +13,7 @@ export default function HomeCard({ title, description, image, imageSide, childre
                 {children}
             </div>
             <div className={styles.image_section} style={{ justifyContent: justify }} >
-                <img className={styles.img} src={image} alt={title} />
+                <Image className={styles.img} src={image} alt={title} width={100} height={100} />
             </div>
         </section>
     )

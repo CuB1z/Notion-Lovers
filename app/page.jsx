@@ -3,7 +3,7 @@ import Home from "@/components/Home"
 import HomeCard from "@/components/HomeCard"
 import LinkButton from "@/components/LinkButton"
 
-export default () => {
+export default function Page() {
     return (
         <Layout>
             <Home />

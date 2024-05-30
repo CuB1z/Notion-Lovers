@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Layout from "@/layouts/Layout"
 import styles from "@styles/pages/about.module.css"
 import SocialCard from "@/components/SocialCard"
@@ -8,7 +9,7 @@ export default function About() {
     <Layout>
       <div className={styles.title}>
         <h1 className={styles.h1}>{SITE_TITLE}</h1>
-        <img className={styles.img} src={FAVICON_URL} alt={SITE_TITLE} />
+        <Image className={styles.img} src={FAVICON_URL} alt={SITE_TITLE} width={50} height={50}/>
       </div>
       <hr />
       <h2 className={styles.h2}>¿Qué es esto?</h2>

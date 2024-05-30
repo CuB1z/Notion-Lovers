@@ -34,8 +34,8 @@ export default async function Page({ params }) {
     const content = await getPageContent(id)
 
     return (
-        <Layout
-            children={ <NotionPage recordMap={content} rootPageId={id} /> }>
+        <Layout>
+            <NotionPage recordMap={content} rootPageId={id} />
         </Layout>
     )
 }
