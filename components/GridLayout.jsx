@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout"
 import Card from "@/components/Card"
 
 export default async function Page({ data, title }) {
+    console.log(data)
     return (
         <Layout>
             <main className={styles.main}>
@@ -17,6 +18,7 @@ export default async function Page({ data, title }) {
                                     title={element.title}
                                     tag={element.tag.name}
                                     id={element.id}
+                                    url={element.url}
                                 />
                             )
                         })
