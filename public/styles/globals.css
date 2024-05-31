@@ -35,7 +35,7 @@
   /* Footer Variables */
   --footer-background: #000000;
   --footer-text-color: var(--light-primary);
-  --footer-height: 50px;
+  --footer-height: 100px;
 
   /* Home Variables */
   --home-background: #f0f0f0;
@@ -52,7 +52,9 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: #e8e8e8;
+  background-image: url("/assets/background.png");
+  background-attachment: fixed;
   color: var(--text-color);
 }
 

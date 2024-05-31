@@ -7,7 +7,7 @@ export default function Home() {
             <div className={styles.text_section}>
                 <h1 className={styles.h1}>Bienvenido a {SITE_TITLE}</h1>
                 <p className={styles.p}>
-                    En {SITE_TITLE} te ofreceremos una serie de contenido en línea relacionado
+                    En {SITE_TITLE} te ofrecemos una serie de contenido en línea relacionado
                     con la URJC y la Ingeniería Software.
                 </p>
             </div>

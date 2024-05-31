@@ -1,7 +1,6 @@
 .main {
     margin-bottom: 100px;
     padding: 0 2rem;
-    line-height: 1.6;
     letter-spacing: 1px;
 }
 
@@ -16,7 +15,9 @@
 }
 
 .p {
+    margin: 0;
     font-size: 1.4rem;
+    line-height: 1.6;
 }
 
 .team_cards {
