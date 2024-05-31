@@ -46,12 +46,14 @@ async function getPages(id) {
     const pages = query.results.map(page => ({
         id: page.id,
         title: page.properties.title?.title[0].plain_text || "Untitled",
+        description: page.properties.description?.rich_text[0]?.plain_text || "No description",
         tag: {
             name: page.properties.tag?.select.name || "Unnamed",
             color: page.properties.tag?.select.color || "gray",
         },
         url: id ? `/content/${id}/${page.id}` : `/content/${page.id}`,
-    }))
+        published: page.properties.status?.status.name === "PUBLISHED"
+    })).filter(page => page.published)
 
     // Store the data in the cache
     cache[databaseId].content = pages

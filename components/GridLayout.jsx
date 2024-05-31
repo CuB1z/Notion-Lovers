@@ -15,6 +15,7 @@ export default async function Page({ data, title }) {
                                 <Card
                                     key={element.id}
                                     title={element.title}
+                                    description={element.description}
                                     tag={element.tag.name}
                                     id={element.id}
                                     url={element.url}
