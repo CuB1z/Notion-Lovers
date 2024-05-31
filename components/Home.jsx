@@ -1,5 +1,4 @@
 import styles from "@styles/components/Home.module.css"
-import Image from "next/image"
 import { SITE_TITLE } from "@/utils/constants"
 
 export default function Home() {
@@ -13,21 +12,17 @@ export default function Home() {
                 </p>
             </div>
             <div className={styles.image_section}>
-                <Image
+                <img
                     className={`${styles.img} ${styles.logo}`}
                     src={"/assets/heart.svg"}
                     alt={"Heart"}
-                    width={100}
-                    height={100}
                 />
             </div>
             <div className={styles.scroll_down}>
-                <Image
+                <img
                     className={styles.img}
                     src={"/assets/arrow.png"}
                     alt={"Scroll Down Indicator"}
-                    width={50}
-                    height={50}
                 />
             </div>
         </section>
