@@ -10,7 +10,12 @@
     font-size: 1.2rem;
     font-weight: 600;
     border-bottom: 3px transparent solid;
-    transition: ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.a.mobile {
+    height: 50px;
+    width: 100%;
 }
 
 .a.active {
@@ -19,6 +24,7 @@
 
 .a:hover {
     border-color: var(--accent-color);
+
 }
 
 .a:visited {

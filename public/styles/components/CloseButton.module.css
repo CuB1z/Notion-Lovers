@@ -1,0 +1,55 @@
+/*
+ * Taken from: https://codepen.io/jakehong0521/pen/mvENjX
+*/
+
+.button {
+    position: absolute;
+    border: none;
+    background: none;
+    width: 40px;
+    height: 30px;
+    right: 30px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button .span {
+    background: black;
+    transform: translateY(-50%) rotate(0deg);
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    transition: top 0.1s ease 0.3s, transform 0.3s ease;
+}
+
+.button.clicked .span {
+    transition: top 0.1s ease, transform 0.3s ease 0.1s;
+}
+
+.button .span:nth-child(1) {
+    top: 10%;
+}
+
+.button .span:nth-child(2) {
+    top: 50%;
+}
+
+.button .span:nth-child(3) {
+    top: 90%;
+}
+
+.button.clicked .span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.button.clicked .span:nth-child(2) {
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.button.clicked .span:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
