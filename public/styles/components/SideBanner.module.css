@@ -1,0 +1,41 @@
+    .aside {
+        position: fixed;
+        right: var(--sidebar-margin);
+        margin-top: var(--sidebar-margin);
+        padding: 10px;
+        height: 85%;
+        width: var(--sidebar-width);
+        top: var(--nav-height);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        background-color: var(--sidebar-background);
+        color: var(--sidebar-text-color);
+        border: var(--sidebar-border);
+        box-shadow: var(--sidebar-box-shadow);
+        border-radius: 5px;
+        z-index: 0;
+    }
+
+    .content {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e8e8e8;
+        background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+        border-radius: 5px;
+    }
+
+    .coffee_container {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

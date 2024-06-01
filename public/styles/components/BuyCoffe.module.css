@@ -1,0 +1,22 @@
+.buy_coffe {
+    --size: 60px;
+    width: var(--size);
+    height: var(--size);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.buy_coffe:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}

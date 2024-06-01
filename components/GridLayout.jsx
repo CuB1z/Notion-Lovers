@@ -2,7 +2,7 @@ import styles from "@styles/components/GridLayout.module.css"
 import Layout from "@/layouts/Layout"
 import Card from "@/components/Card"
 
-export default async function Page({ data, title }) {
+export default async function GridLayout({ data, title }) {
     return (
         <Layout>
             <main className={styles.main}>

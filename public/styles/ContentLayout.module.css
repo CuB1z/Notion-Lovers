@@ -1,0 +1,23 @@
+.content {
+    --real-sidebar-width: calc(var(--sidebar-width) + (var(--sidebar-margin) * 2));
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: var(--real-sidebar-width) 1fr var(--real-sidebar-width);
+    align-items: center;
+}
+
+.aside {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    --padding-top: calc(var(--nav-height) + 20px);
+    padding-top: var(--padding-top);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}

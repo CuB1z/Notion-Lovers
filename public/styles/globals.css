@@ -14,11 +14,14 @@
 
   /* Sidebar Variables */
   --sidebar-width: 300px;
+  --sidebar-margin: 20px;
   --sidebar-background: #f0f0f0;
   --sidebar-border: 1px solid #dadada;
   --sidebar-border-color: #dadada;
   --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  --sidebar-text-color: var(--text-color); 
+  --sidebar-text-color: var(--text-color);
+
+  --sidebanner-width: 300px;
 
   /* Button Variables */
   --button-background: #ff0000;
@@ -47,7 +50,6 @@
   box-sizing: border-box;
   scrollbar-width: thin;
   scroll-behavior: smooth;
-  scrollbar-color: var(--dark-primary) var(--light-primary);
   font-family: sans-serif;
 }
 

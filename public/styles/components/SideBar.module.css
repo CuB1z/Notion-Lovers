@@ -1,0 +1,38 @@
+    .aside {
+        position: fixed;
+        left: var(--sidebar-margin);
+        margin-top: var(--sidebar-margin);
+        padding: 10px;
+        height: 85%;
+        width: var(--sidebar-width);
+        top: var(--nav-height);
+        background-color: var(--sidebar-background);
+        color: var(--sidebar-text-color);
+        border: var(--sidebar-border);
+        box-shadow: var(--sidebar-box-shadow);
+        border-radius: 5px;
+        z-index: 0;
+    }
+
+    .title {
+        text-align: center;
+        padding: 5px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        border-bottom: var(--sidebar-border);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;
+        overflow: hidden;
+    }
+
+    .back_btn__container {
+        --margin: 20px;
+        position: absolute;
+        bottom: var(--margin);
+        right: var(--margin);
+    }
