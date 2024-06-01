@@ -57,14 +57,14 @@ async function getPages(id) {
 
         const pages = query.results.map(page => ({
             id: page.id,
-            title: page.properties.title?.title[0].plain_text || "Untitled",
+            title: `${page.icon?.emoji || "📄"} ${page.properties.title?.title[0].plain_text || "Untitled"}`,
             description: page.properties.description?.rich_text[0]?.plain_text || "No description",
             tag: {
                 name: page.properties.tag?.select.name || "Unnamed",
                 color: page.properties.tag?.select.color || "gray",
             },
             url: id ? `/content/${id}/${page.id}` : `/content/${page.id}`,
-        }))
+        })).sort((a, b) => a.tag.name.localeCompare(b.tag.name))
 
         cache[databaseId].content = pages
         cache[databaseId].timestamp = Date.now()
