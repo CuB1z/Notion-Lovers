@@ -5,7 +5,7 @@ export const MobileContext = React.createContext()
 
 // Create the provider component
 export const MobileProvider = ({ children }) => {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
+    const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
         const handleResize = () => {
