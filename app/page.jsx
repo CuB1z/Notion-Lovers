@@ -1,9 +1,25 @@
+"use client"
+import { useState, useEffect } from 'react'
 import Layout from "@/layouts/Layout"
 import Home from "@/components/Home"
 import HomeCard from "@/components/HomeCard"
 import LinkButton from "@/components/LinkButton"
+import LoadingScene from '@/components/LoadingScene'
 
 export default function Page() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        // Simulate a network request to fetch data, which takes 2 seconds
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+    }, []);
+
+    if (isLoading) {
+        return <LoadingScene />
+    }
+
     return (
         <Layout>
             <Home />
@@ -33,5 +49,5 @@ export default function Page() {
                 </HomeCard>
             </main>
         </Layout>
-    )
+    );
 }
