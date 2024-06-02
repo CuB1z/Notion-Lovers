@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <span>&copy; {today.getFullYear()} {SITE_TITLE}.</span>
-            <span className={styles.cool_text}>Made for and by the community</span>
+            <span className={styles.cool_text}>Made with ❤️ by {SITE_TITLE}</span>
         </footer>
     )
 }
