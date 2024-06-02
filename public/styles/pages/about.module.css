@@ -23,9 +23,10 @@
 .team_cards {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -39,4 +40,45 @@
     width: 100px;
     height: 100px;
     margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 4rem;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    .p {
+        font-size: 1.2rem;
+    }
+
+    .title .img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 600px) {
+    .h1 {
+        font-size: 3rem;
+    }
+
+    .title .img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .h1 {
+        font-size: 2.2rem;
+    }
+
+    .title .img {
+        width: 40px;
+        height: 40px;
+    }
 }
