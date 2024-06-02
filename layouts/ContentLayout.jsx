@@ -8,13 +8,13 @@ import SideBanner from "@/components/sidebar/SideBanner"
 import { MobileProvider } from "@/providers/MobileProvider"
 
 
-export default function ContentLayout({ children }) {
+export default function ContentLayout({ backUrl, pages, children }) {
     return (
         <MobileProvider>
             <Header />
             <div className={styles.content}>
                 <aside className={styles.aside}>
-                    <SideBar />
+                    <SideBar backUrl={backUrl} pages={pages} />
                 </aside>
                 <div className={styles.main}>
                     {children}

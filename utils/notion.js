@@ -36,7 +36,7 @@ function isCacheExpired(id) {
     return Date.now() - cache[id].timestamp > CACHE_LIFE_TIME
 }
 
-async function getPages(id) {
+async function getPages(id, parentId = null) {
     const databaseId = getDatabaseId(id)
     initializeCache(databaseId)
 
@@ -63,7 +63,7 @@ async function getPages(id) {
                 name: page.properties.tag?.select.name || "Unnamed",
                 color: page.properties.tag?.select.color || "gray",
             },
-            url: id ? `/content/${id}/${page.id}` : `/content/${page.id}`,
+            url: id ? `/content/${parentId || id}/${page.id}` : `/content/${page.id}`,
         })).sort((a, b) => a.tag.name.localeCompare(b.tag.name))
 
         cache[databaseId].content = pages
@@ -85,7 +85,7 @@ async function getChildDatabasePages(id) {
     try {
         const page = await notion.blocks.children.list({ block_id: id })
         const childDataBases = page.results.filter((block) => block.type === 'child_database')
-        const pagePromises = childDataBases.map(childDataBase => getPages(childDataBase.id))
+        const pagePromises = childDataBases.map(childDataBase => getPages(childDataBase.id, id))
         const pageArrays = await Promise.all(pagePromises)
         const pages = pageArrays.flat()
 
