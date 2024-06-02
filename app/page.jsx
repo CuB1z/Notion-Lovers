@@ -2,6 +2,7 @@ import Layout from "@/layouts/Layout"
 import Home from "@/components/Home"
 import HomeCard from "@/components/HomeCard"
 import LinkButton from "@/components/LinkButton"
+import { GITHUB_REPO } from "@/utils/constants"
 
 export default function Page() {
     return (
@@ -26,7 +27,7 @@ export default function Page() {
                     imageSide={"left"}
                 >
                     <LinkButton
-                        url={"https://github.com/CuB1z/notion-page"}
+                        url={GITHUB_REPO}
                         text={"Ver repositorio"}
                         target={"_blank"}
                     />
