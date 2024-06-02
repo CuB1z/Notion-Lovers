@@ -1,7 +1,7 @@
 import styles from "@styles/components/SideBanner.module.css"
 import BuyCoffe from "../BuyCoffe"
 
-export default async function SideBanner() {
+export default function SideBanner() {
 
     return (
         <aside className={styles.aside}>
