@@ -1,5 +1,3 @@
-"use client"
-import { useState, useEffect } from 'react'
 import Layout from "@/layouts/Layout"
 import Home from "@/components/Home"
 import HomeCard from "@/components/HomeCard"
@@ -9,7 +7,7 @@ export default function Page() {
     return (
         <Layout>
             <Home />
-            <main>
+            <>
                 <HomeCard
                     title={"Ingeniería Software"}
                     description={"Ofrecemos una variedad de apuntes que hemos ido recopilando durante nuestra experiencia universitaria."}
@@ -33,7 +31,7 @@ export default function Page() {
                         target={"_blank"}
                     />
                 </HomeCard>
-            </main>
+            </>
         </Layout>
     );
 }
