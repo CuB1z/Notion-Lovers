@@ -22,6 +22,18 @@
     justify-content: space-between;
 }
 
+.a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.a .header_icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 .ul {
     height: 100%;
     display: flex;
@@ -95,5 +107,9 @@
         display: block;
         gap: 1em;
         padding-right: 1em;
+    }
+
+    .a {
+        gap: 5px;
     }
 }

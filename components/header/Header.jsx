@@ -14,7 +14,10 @@ export default function Header() {
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <h1>
-                    <a href="/">{SITE_TITLE} ❤</a>
+                    <a href="/" className={styles.a}>
+                        <span>{SITE_TITLE}</span>
+                        <img className={styles.header_icon} src="/assets/black-heart.svg" alt="Dark Heart" />
+                    </a>
                 </h1>
                 <CloseButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
                 <ul className={`${styles.ul} ${isOpen ? styles.open : ""} ${isMobile ? styles.mobile : ""}`}>
