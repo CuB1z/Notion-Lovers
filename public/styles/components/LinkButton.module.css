@@ -11,6 +11,12 @@
     transition: all 0.2s;
 }
 
+.a.black {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
 .a:hover {
     cursor: pointer;
     transform: translate(2px, -2px);

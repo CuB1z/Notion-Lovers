@@ -8,10 +8,7 @@ export default function Card({ title, tag, url, id, description }) {
             <p className={styles.p}>{description}</p>
             <div className={styles.button_container}>
                 <span className={styles.tag}>{tag}</span>
-                <LinkButton
-                    url={url}
-                    text="Ver más"
-                />
+                <LinkButton url={url}>Ver más</LinkButton>
             </div>
         </div>
     )

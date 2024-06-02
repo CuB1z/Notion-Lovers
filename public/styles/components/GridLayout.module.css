@@ -9,6 +9,19 @@
     gap: 2rem;
 }
 
+.title_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
 .content {
     width: 100%;
     display: grid;

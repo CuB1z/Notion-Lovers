@@ -15,10 +15,7 @@ export default function Page() {
                     image={"/assets/library-urjc.jpeg"}
                     imageSide={"right"}
                 >
-                    <LinkButton
-                        url={"/content"}
-                        text={"Ver apuntes"}
-                    />
+                    <LinkButton url={"/content"}>Ver apuntes</LinkButton>
                 </HomeCard>
                 <HomeCard
                     title={"Repositorio de GitHub"}
@@ -26,11 +23,7 @@ export default function Page() {
                     image={"/assets/github-bg.jpeg"}
                     imageSide={"left"}
                 >
-                    <LinkButton
-                        url={GITHUB_REPO}
-                        text={"Ver repositorio"}
-                        target={"_blank"}
-                    />
+                    <LinkButton url={GITHUB_REPO} target={"_blank"}>Ir al repositorio</LinkButton>
                 </HomeCard>
             </>
         </Layout>

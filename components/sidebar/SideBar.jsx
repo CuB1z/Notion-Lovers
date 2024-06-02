@@ -14,7 +14,7 @@ export default function SideBar({ backUrl, pages }) {
                 }
             </div>
             <div className={styles.back_btn__container}>
-                <LinkButton url={backUrl} text="Volver" />
+                <LinkButton url={backUrl}>Volver</LinkButton>
             </div>
         </aside>
     )

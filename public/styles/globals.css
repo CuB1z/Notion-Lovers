@@ -42,6 +42,10 @@
 
   /* Home Variables */
   --home-background: #f0f0f0;
+
+  /* General Colors */
+  --white: #ffffff;
+  --black: #000000;
 }
 
 * {

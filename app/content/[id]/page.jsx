@@ -3,10 +3,9 @@ import { getChildDatabasePages, getPages, getPageTitle } from "@/utils/notion"
 
 export default async function Page({ params }) {
     const id = params.id
-    const data = await getChildDatabasePages(id)
-    const title = await getPageTitle(id)
+    const [data, title] = await Promise.all([getChildDatabasePages(id), getPageTitle(id)])
 
     return (
-        <GridLayout data={data} title={title}/>
+        <GridLayout data={data} title={title} backUrl={"/content"}/>
     )
 }
