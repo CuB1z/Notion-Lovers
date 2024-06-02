@@ -33,6 +33,7 @@
 }
 
 .ul.mobile {
+    display: none;
     position: absolute;
     height: fit-content;
     width: 150px;
@@ -88,7 +89,11 @@
 
 @media (max-width: 600px) {
     .ul {
+        display: none;
+    }
+    .ul.ul.mobile {
+        display: block;
         gap: 1em;
         padding-right: 1em;
-    }    
+    }
 }

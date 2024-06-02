@@ -3,6 +3,7 @@
 */
 
 .button {
+    display: none;
     position: absolute;
     border: none;
     background: none;
@@ -52,4 +53,10 @@
 .button.clicked .span:nth-child(3) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
+}
+
+@media (max-width: 600px) {
+    .button {
+        display: block;
+    }
 }
