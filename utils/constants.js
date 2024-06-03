@@ -12,5 +12,4 @@ export const metadata = {
     description: SITE_DESCRIPTION,
 }
 
-export const CACHE_LIFE_TIME = DEBUG_MODE ? 1000 * 0 : 1000 * 60 * 60 // {ms * s * m} 1 hour
-console.log("DEBUG_MODE", DEBUG_MODE)
+export const CACHE_LIFE_TIME = 1000 * 60 * 2

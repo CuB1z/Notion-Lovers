@@ -1,5 +1,5 @@
 import GridLayout from "@components/GridLayout"
-import { getChildDatabasePages, getPages, getPageTitle } from "@/utils/notion"
+import { getChildDatabasePages, getPageTitle } from "@/utils/notion"
 
 export default async function Page({ params }) {
     const id = params.id
