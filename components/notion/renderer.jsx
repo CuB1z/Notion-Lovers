@@ -17,6 +17,7 @@ export const NotionPage = ({ recordMap, rootPageId }) => {
     <div className="notion_container">
       <NotionRenderer
         recordMap={recordMap}
+        mapPageUrl={(pageId) => `/content/${rootPageId}/${pageId}`}
         fullPage={false}
         darkMode={false}
         rootPageId={rootPageId}

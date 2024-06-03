@@ -16,6 +16,7 @@
 .a.mobile {
     height: 50px;
     width: 100%;
+    border-bottom: 3px solid var(--sidebar-border-color);
 }
 
 .a.active {

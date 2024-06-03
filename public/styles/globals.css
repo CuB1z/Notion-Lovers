@@ -70,6 +70,11 @@ a {
 }
 
 /* Notion Modified Classes*/
-.notion-file-info {
+.notion-file-info,
+.notion-file-link {
   width: 100%;
+}
+
+.notion-file-title {
+  white-space: normal;
 }
