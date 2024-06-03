@@ -8,20 +8,24 @@ import SideBanner from "@/components/sidebar/SideBanner"
 import { MobileProvider } from "@/providers/MobileProvider"
 
 
-export default function ContentLayout({ backUrl, pages, children }) {
+export default function ContentLayout({ backUrl, pages, children, isTree }) {
     return (
         <MobileProvider>
             <Header />
             <div className={styles.content}>
-                <aside className={styles.aside}>
-                    <SideBar backUrl={backUrl} pages={pages} />
-                </aside>
+                {!isTree && (
+                    <aside className={styles.aside}>
+                        <SideBar backUrl={backUrl} pages={pages} />
+                    </aside>
+                )}
                 <div className={styles.main}>
                     {children}
                 </div>
-                <aside className={`${styles.aside} ${styles.banner}`}>
-                    <SideBanner />
-                </aside>
+                {!isTree && (
+                    <aside className={`${styles.aside} ${styles.banner}`}>
+                        <SideBanner />
+                    </aside>
+                )}
             </div>
             <Footer />
         </MobileProvider>
