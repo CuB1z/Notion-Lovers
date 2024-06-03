@@ -13,6 +13,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .button_content {
@@ -25,6 +27,18 @@
 .content {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
+}
+
+@media (max-width: 500px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        padding: 0.25rem;
+    }
 }
