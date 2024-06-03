@@ -12,7 +12,7 @@ export default function ContentLayout({ backUrl, pages, children, isTree }) {
     return (
         <MobileProvider>
             <Header />
-            <div className={styles.content}>
+            <div className={`${styles.content} ${isTree ? styles.tree : ""}`}>
                 {!isTree && (
                     <aside className={styles.aside}>
                         <SideBar backUrl={backUrl} pages={pages} />

@@ -1,3 +1,4 @@
+import styles from "@styles/pages/contentPage.module.css"
 import ContentLayout from "@/layouts/ContentLayout"
 import Custom404 from "@/components/404"
 import { NotionPage } from "@/components/notion"
@@ -13,7 +14,9 @@ export default async function Page({ params }) {
 
     return (
         <ContentLayout isTree>
-            <NotionPage recordMap={content} rootPageId={id}/>
+            <div className={styles.notion_container}>
+                <NotionPage recordMap={content} rootPageId={id} />
+            </div>
         </ContentLayout>
     )
 }
