@@ -68,3 +68,8 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
+
+/* Notion Modified Classes*/
+.notion-file-info {
+  width: 100%;
+}

@@ -13,6 +13,10 @@
     height: 100%;
 }
 
+.aside.banner {
+    display: none;
+}
+
 .main {
     --padding-top: calc(var(--nav-height) + 20px);
     padding-top: var(--padding-top);
@@ -20,4 +24,15 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    .content {
+        grid-template-columns: 100%;
+        padding: 0 25px;
+    }
+
+    .aside {
+        display: none;
+    }
 }

@@ -19,7 +19,7 @@ export default function ContentLayout({ backUrl, pages, children }) {
                 <div className={styles.main}>
                     {children}
                 </div>
-                <aside className={styles.aside}>
+                <aside className={`${styles.aside} ${styles.banner}`}>
                     <SideBanner />
                 </aside>
             </div>
