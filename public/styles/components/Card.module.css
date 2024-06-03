@@ -38,3 +38,17 @@
     letter-spacing: 1px;
     line-height: 1.6;
 }
+
+@media (max-width: 425px) {
+    .item {
+        padding: 0.75rem;
+    }
+
+    .h2 {
+        font-size: 1.3rem;
+    }
+
+    .p {
+        font-size: 0.9rem;
+    }
+}
