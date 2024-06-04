@@ -2,6 +2,7 @@ import Layout from "@/layouts/Layout"
 import Home from "@/components/Home"
 import HomeCard from "@/components/HomeCard"
 import LinkButton from "@/components/LinkButton"
+import Contribute from "@/components/Contribute"
 import { GITHUB_REPO } from "@/utils/constants"
 
 export default function Page() {
@@ -25,7 +26,15 @@ export default function Page() {
                 >
                     <LinkButton url={GITHUB_REPO} target={"_blank"}>Ir al repositorio</LinkButton>
                 </HomeCard>
+                <HomeCard
+                    title={"¿Quiéres contribuir?"}
+                    description={"Si tienes apuntes o recursos que crees que podrían ser útiles para otros estudiantes, nos encantaría que los compartieras con nosotros. Tu contribución puede marcar una gran diferencia en la experiencia de aprendizaje de alguien."}
+                    image={"/assets/contribute-bg.jpg"}
+                    imageSide={"right"}
+                >
+                    <LinkButton url={"/contribute"}>Contribuir</LinkButton>
+                </HomeCard>
             </>
         </Layout>
-    );
+    )
 }
