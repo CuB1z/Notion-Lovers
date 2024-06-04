@@ -1,4 +1,5 @@
-import styles from "@styles/components/Contribute.module.css"
+import styles from "@styles/components/contribute/Contribute.module.css"
+import ContributeForm from "@components/contribute/ContributeForm"
 
 export default function Contribute() {
     return (
@@ -33,25 +34,7 @@ export default function Contribute() {
                 <p className={styles.p}>Para contribuir, por favor envíanos tus apuntes a través de nuestro formulario de envío en la plataforma.</p>
                 <p className={styles.p}>¡Agradecemos tu contribución para hacer los recursos académicos más accesibles para todos! 🎓🌍</p>
             </section>
-            <form className={styles.form} action="/api/contribute" method="post">
-                <div className={styles.formGroup}>
-                    <label className={styles.label} htmlFor="name">Nombre</label>
-                    <input className={styles.input} type="text" id="name" name="name" />
-                </div>
-                <div className={styles.formGroup}>
-                    <label className={styles.label} htmlFor="title">Título</label>
-                    <input className={styles.input} type="text" id="title" name="title" />
-                </div>
-                <div className={styles.formGroup}>
-                    <label className={styles.label} htmlFor="link">Enlace</label>
-                    <input className={styles.input} type="url" id="link" name="link" />
-                </div>
-                <div className={styles.formGroup}>
-                    <label className={styles.label} htmlFor="file">Archivo</label>
-                    <input className={styles.input} type="file" id="file" name="file" />
-                </div>
-                <button className={styles.button} type="submit">Enviar</button>
-            </form>
+            <ContributeForm />
         </div>
     )
 }

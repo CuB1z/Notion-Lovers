@@ -148,13 +148,30 @@ const contributorsClient = new Client({
 })
 
 async function insertContributorData(data) {
+    const maxContentLength = 2000
+    const contentBlocks = []
+
+    for (let i = 0; i < data.content.length; i += maxContentLength) {
+        const contentChunk = data.content.substring(i, i + maxContentLength)
+        contentBlocks.push({
+            object: "block",
+            type: "paragraph",
+            paragraph: {
+                rich_text: [
+                    { type: "text", text: { content: contentChunk } }
+                ]
+            }
+        })
+    }
+
     await contributorsClient.pages.create({
         parent: { database_id: notionContributorsDatabaseId },
         properties: {
-            title: { title: [{ type: "text", text: { content: data.title || "Untitled" } }] },
-            url: { type: "url", url: data.url || "" },
-            data: { type: "rich_text", rich_text: [{ type: "text", text: { content: data.content || "" } }] },
-        }
+            title: { title: [{ type: "text", text: { content: data.title } }] },
+            url: { type: "url", url: data.url },
+            name: { type: "rich_text", rich_text: [{ type: "text", text: { content: data.name } }] },
+        },
+        children: contentBlocks
     })
 }
 
