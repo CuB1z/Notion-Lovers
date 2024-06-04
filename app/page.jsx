@@ -2,7 +2,6 @@ import Layout from "@/layouts/Layout"
 import Home from "@/components/Home"
 import HomeCard from "@/components/HomeCard"
 import LinkButton from "@/components/LinkButton"
-import Contribute from "@/components/Contribute"
 import { GITHUB_REPO } from "@/utils/constants"
 
 export default function Page() {
