@@ -22,7 +22,7 @@ export default function ContributeForm() {
             </div>
             <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor="file">Archivo</label>
-                <input className={styles.input} type="file" id="file" name="file" />
+                <input className={styles.input} type="file" id="file" name="file" accept=".md, .txt" />
             </div>
             <button className={styles.button} type="submit">Enviar</button>
         </form>
