@@ -6,7 +6,6 @@ export default function ContributeForm() {
         <form
             className={styles.form}
             action={contribute}
-            encType="multipart/form-data"
         >
             <div className={styles.formGroup}>
                 <label className={styles.label} htmlFor="name">Nombre</label>
