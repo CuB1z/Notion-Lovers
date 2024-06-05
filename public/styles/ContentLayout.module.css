@@ -13,10 +13,6 @@
     height: 100%;
 }
 
-.aside.banner {
-    display: none;
-}
-
 .content.tree {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,4 @@
+import "@styles/globals.css"
 import styles from "@styles/components/404.module.css"
 
 export default function Custom404() {

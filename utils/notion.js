@@ -6,6 +6,9 @@ import { CACHE_LIFE_TIME } from './constants'
 const notionSecret = process.env.NOTION_SECRET
 const notionDatabaseId = process.env.NOTION_DATABASE_ID
 
+const notionContributorsSecret = process.env.NOTION_CONTRIBUTORS_SECRET
+const notionContributorsDatabaseId = process.env.NOTION_CONTRIBUTORS_DATABASE_ID
+
 if (!notionSecret || !notionDatabaseId) {
     throw new Error("Environment variables NOTION_SECRET and NOTION_DATABASE_ID must be set.")
 }
@@ -16,6 +19,7 @@ const notion = new Client({
     auth: notionSecret,
 })
 
+// Retrieve data from Notion Content Database
 const cache = {}
 
 function getDatabaseId(id) {
@@ -138,4 +142,37 @@ async function getPageContent(id) {
     }
 }
 
-export { getPages, getChildDatabasePages, getPageTitle, getPageContent }
+// Insert data into Notion Contributors Database
+const contributorsClient = new Client({
+    auth: notionContributorsSecret,
+})
+
+async function insertContributorData(data) {
+    const maxContentLength = 2000
+    const contentBlocks = []
+
+    for (let i = 0; i < data.content.length; i += maxContentLength) {
+        const contentChunk = data.content.substring(i, i + maxContentLength)
+        contentBlocks.push({
+            object: "block",
+            type: "paragraph",
+            paragraph: {
+                rich_text: [
+                    { type: "text", text: { content: contentChunk } }
+                ]
+            }
+        })
+    }
+
+    await contributorsClient.pages.create({
+        parent: { database_id: notionContributorsDatabaseId },
+        properties: {
+            title: { title: [{ type: "text", text: { content: data.title } }] },
+            url: { type: "url", url: data.url },
+            name: { type: "rich_text", rich_text: [{ type: "text", text: { content: data.name } }] },
+        },
+        children: contentBlocks
+    })
+}
+
+export { getPages, getChildDatabasePages, getPageTitle, getPageContent, insertContributorData }
