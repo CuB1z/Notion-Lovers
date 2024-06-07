@@ -7,6 +7,12 @@
         transition: all 0.3s;
     }
 
+    .title {
+        font-size: 1em;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+    }
+
     .item .img {
         width: 20px;
         height: 20px;
@@ -19,5 +25,5 @@
     }
 
     .item:hover .img {
-        transform: rotate(90deg);
+        transform:translateY(-3px);
     }
