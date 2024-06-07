@@ -1,7 +1,7 @@
 import styles from "@styles/components/GridLayout.module.css"
 import Layout from "@/layouts/Layout"
-import Card from "@/components/Card"
-import LinkButton from "./LinkButton"
+import DataSection from "@components/DataSection"
+import LinkButton from "@components/LinkButton"
 
 export default async function GridLayout({ data, title, backUrl }) {
     return (
@@ -17,22 +17,17 @@ export default async function GridLayout({ data, title, backUrl }) {
                     </LinkButton>
                 </div>
                 <hr />
-                <section className={styles.content}>
-                    {
-                        data.map((element) => {
-                            return (
-                                <Card
-                                    key={element.id}
-                                    title={element.title}
-                                    description={element.description}
-                                    tag={element.tag.name}
-                                    id={element.id}
-                                    url={element.url}
-                                />
-                            )
-                        })
-                    }
-                </section>
+                {
+                    !data[0].id ?
+                    data.map((section) => {
+                        return (
+                            <DataSection
+                                title={section.title}
+                                content={section.content}
+                            />
+                        )
+                    }) : <DataSection content={data} />
+                }
             </main>
         </Layout>
     )

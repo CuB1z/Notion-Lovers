@@ -89,9 +89,15 @@ async function getChildDatabasePages(id) {
     try {
         const page = await notion.blocks.children.list({ block_id: id })
         const childDataBases = page.results.filter((block) => block.type === 'child_database')
-        const pagePromises = childDataBases.map(childDataBase => getPages(childDataBase.id, id))
-        const pageArrays = await Promise.all(pagePromises)
-        const pages = pageArrays.flat()
+        const pagePromises = childDataBases.map(async (childDataBase) => {
+            const res = await getPages(childDataBase.id, id)
+            return {
+                title: childDataBase.child_database.title,
+                content: res
+            }
+        })
+
+        const pages = await Promise.all(pagePromises)
 
         cache[id].content = pages
         cache[id].timestamp = Date.now()
