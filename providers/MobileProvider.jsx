@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { MOBILE_BREAKPOINT } from '@/utils/constants'
 
 // Create the context
 export const MobileContext = React.createContext()
@@ -9,7 +10,7 @@ export const MobileProvider = ({ children }) => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 600)
+            setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT)
         }
 
         window.addEventListener('resize', handleResize)

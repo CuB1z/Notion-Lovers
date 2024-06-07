@@ -20,14 +20,16 @@ export default function Header() {
                     </a>
                 </h1>
                 <CloseButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-                <ul className={`${styles.ul} ${isOpen ? styles.open : ""} ${isMobile ? styles.mobile : ""}`}>
+                <ul className={`${styles.ul} ${isOpen ? styles.open : ""}`}>
                     <HeaderLink href="/">Inicio</HeaderLink>
                     <HeaderLink href="/content">Contenido</HeaderLink>
+                    <HeaderLink href="/contribute">Contribuir</HeaderLink>
                     <HeaderLink href="/about">Acerca de</HeaderLink>
                 </ul>
                 <ul className={`${styles.ul} ${isOpen ? styles.open : ""} ${styles.mobile}`}>
                     <HeaderLink href="/">Inicio</HeaderLink>
                     <HeaderLink href="/content">Contenido</HeaderLink>
+                    <HeaderLink href="/contribute">Contribuir</HeaderLink>
                     <HeaderLink href="/about">Acerca de</HeaderLink>
                 </ul>
             </nav>

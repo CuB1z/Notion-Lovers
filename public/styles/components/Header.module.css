@@ -99,12 +99,12 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .ul {
         display: none;
     }
-    .ul.ul.mobile {
-        display: block;
+    .ul.mobile {
+        display: flex;
         gap: 1em;
         padding-right: 1em;
     }
