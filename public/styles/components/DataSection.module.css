@@ -1,0 +1,22 @@
+.title_section {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+
+.content {
+    padding: 1rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+@media (max-width: 500px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
