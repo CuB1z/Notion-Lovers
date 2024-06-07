@@ -22,6 +22,7 @@ export default async function GridLayout({ data, title, backUrl }) {
                     data.map((section) => {
                         return (
                             <DataSection
+                                key={section.childId}
                                 title={section.title}
                                 content={section.content}
                             />

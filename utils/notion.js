@@ -92,6 +92,7 @@ async function getChildDatabasePages(id) {
         const pagePromises = childDataBases.map(async (childDataBase) => {
             const res = await getPages(childDataBase.id, id)
             return {
+                childId: childDataBase.id,
                 title: childDataBase.child_database.title,
                 content: res
             }
