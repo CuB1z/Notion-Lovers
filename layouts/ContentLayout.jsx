@@ -19,7 +19,10 @@ export default function ContentLayout({ backUrl, pages, children, isTree }) {
                     </aside>
                 )}
                 <div className={styles.main}>
-                    {children}
+                    <div className={styles.main_content}>
+                        {children}
+                        <Footer />
+                    </div>
                 </div>
                 {!isTree && (
                     <aside className={`${styles.aside} ${styles.banner}`}>
@@ -27,7 +30,6 @@ export default function ContentLayout({ backUrl, pages, children, isTree }) {
                     </aside>
                 )}
             </div>
-            <Footer />
         </MobileProvider>
     )
 }

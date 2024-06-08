@@ -5,8 +5,10 @@ export default function Footer() {
     const today = new Date()
     return (
         <footer className={styles.footer}>
-            <span>&copy; {today.getFullYear()} {SITE_TITLE}.</span>
-            <span className={styles.cool_text}>Made with ❤️ by {SITE_TITLE}</span>
+            <div className={styles.content}>
+                <span>&copy; {today.getFullYear()} {SITE_TITLE}.</span>
+                <span className={styles.cool_text}>Made with ❤️ by {SITE_TITLE}</span>
+            </div>
         </footer>
     )
 }

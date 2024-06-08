@@ -14,8 +14,8 @@ export default function Layout({ preMain, children }) {
 			</section>
 			<main className={styles.main}>
 				{children}
+				<Footer />
 			</main>
-			<Footer />
 		</MobileProvider>
 	)
 }

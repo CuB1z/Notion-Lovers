@@ -1,11 +1,10 @@
 .container {
-    padding: 1rem;
-        min-height: 100vh;
-        width: 100%;
-        max-width: var(--max-width);
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+    min-height: 100vh;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .info {
@@ -45,7 +44,8 @@
     font-size: 1.5rem;
 }
 
-.p, .list_item {
+.p,
+.list_item {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     padding-right: 1.5rem;
