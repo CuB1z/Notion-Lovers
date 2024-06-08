@@ -23,6 +23,7 @@ export default function DataSection({ title, content }) {
                                 title={element.title}
                                 description={element.description}
                                 tag={element.tag?.name}
+                                color={element.tag?.color}
                                 id={element.id}
                                 url={element.url}
                             />

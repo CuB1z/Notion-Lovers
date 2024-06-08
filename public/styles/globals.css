@@ -13,6 +13,17 @@
   --text-color-light: #333333;
   --background-color: #f0f0f0;
 
+  --green-color: #dbeddb;
+  --red-color: #ffe2dd;
+  --blue-color: #d3e5ef;
+  --yellow-color: #fdecc8;
+  --purple-color: #e8deee;
+  --orange-color: #fadec9;
+  --gray-color: #e3e2e0;
+  --pink-color: #ffc0cbbf;
+  --brown-color: #eee0da;
+  --default-color: #e9e8e7;
+
   /* Sidebar Variables */
   --sidebar-width: 300px;
   --sidebar-margin: 20px;
