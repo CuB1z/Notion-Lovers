@@ -68,7 +68,11 @@ async function getPages(id, parentId = null) {
                 color: page.properties.tag?.select.color || "gray",
             },
             url: id ? `/content/${parentId || id}/${page.id}` : `/content/${page.id}`,
-        })).sort((a, b) => a.tag.name.localeCompare(b.tag.name))
+        })).sort((a, b) => {
+            // Sort by tag name first, then by title
+            if (a.tag.name === b.tag.name) return a.title.localeCompare(b.title)
+            return a.tag.name.localeCompare(b.tag.name)
+        })
 
         cache[databaseId].content = pages
         cache[databaseId].timestamp = Date.now()
