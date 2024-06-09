@@ -16,6 +16,7 @@
 
 .p {
     margin: 0;
+    padding-right: 1.5rem;
     font-size: 1.4rem;
     line-height: 1.6;
 }
@@ -23,9 +24,10 @@
 .team_cards {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     flex-wrap: wrap;
 }
 
