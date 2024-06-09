@@ -90,3 +90,7 @@ a {
 .notion-file-title {
   white-space: normal;
 }
+
+.notion-quote {
+  font-size: medium;
+}
