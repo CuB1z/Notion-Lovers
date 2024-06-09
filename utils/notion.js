@@ -1,7 +1,7 @@
 "use server"
-import { Client } from '@notionhq/client'
-import { NotionAPI } from 'notion-client'
-import { CACHE_LIFE_TIME } from './constants'
+import { Client } from "@notionhq/client"
+import { NotionAPI } from "notion-client"
+import { AVAILABLE_PAGES, CACHE_LIFE_TIME } from "@utils/constants"
 
 const notionSecret = process.env.NOTION_SECRET
 const notionDatabaseId = process.env.NOTION_DATABASE_ID
@@ -67,7 +67,7 @@ async function getPages(id, parentId = null) {
                 name: page.properties.tag?.select.name || "Unnamed",
                 color: page.properties.tag?.select.color || "gray",
             },
-            url: id ? `/content/${parentId || id}/${page.id}` : `/content/${page.id}`,
+            url: id ? `${AVAILABLE_PAGES.notes.url}/${parentId || id}/${page.id}` : `${AVAILABLE_PAGES.notes.url}/${page.id}`,
         })).sort((a, b) => {
             // Sort by tag name first, then by title
             if (a.tag.name === b.tag.name) return a.title.localeCompare(b.title)
@@ -92,7 +92,7 @@ async function getChildDatabasePages(id) {
 
     try {
         const page = await notion.blocks.children.list({ block_id: id })
-        const childDataBases = page.results.filter((block) => block.type === 'child_database')
+        const childDataBases = page.results.filter((block) => block.type === "child_database")
         const pagePromises = childDataBases.map(async (childDataBase) => {
             const res = await getPages(childDataBase.id, id)
             return {

@@ -7,6 +7,8 @@ import { MobileContext } from "@/providers/MobileProvider"
 export default function HeaderLink({ href, children }) {
     const isMobile = useContext(MobileContext)
 
+    // Add /tree
+
     const path = usePathname().split("/")[1]
     const fHref = href.split("/")[1]
     const activeStyle = path === fHref ? styles.active : ""

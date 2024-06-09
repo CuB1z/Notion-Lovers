@@ -2,7 +2,7 @@ import Layout from "@/layouts/Layout"
 import Home from "@/components/Home"
 import HomeCard from "@/components/HomeCard"
 import LinkButton from "@/components/LinkButton"
-import { GITHUB_REPO } from "@/utils/constants"
+import { GITHUB_REPO, AVAILABLE_PAGES } from "@/utils/constants"
 
 export default function Page() {
     return (
@@ -15,7 +15,7 @@ export default function Page() {
                     image={"/assets/library-urjc.jpeg"}
                     imageSide={"right"}
                 >
-                    <LinkButton url={"/content"}>Ver apuntes</LinkButton>
+                    <LinkButton url={AVAILABLE_PAGES.root.url}>Ver apuntes</LinkButton>
                 </HomeCard>
                 <HomeCard
                     title={"Repositorio de GitHub"}
@@ -31,7 +31,7 @@ export default function Page() {
                     image={"/assets/contribute-bg.jpg"}
                     imageSide={"right"}
                 >
-                    <LinkButton url={"/contribute"}>Contribuir</LinkButton>
+                    <LinkButton url={AVAILABLE_PAGES.contribute.url}>Contribuir</LinkButton>
                 </HomeCard>
             </>
         </Layout>
