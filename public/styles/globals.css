@@ -44,9 +44,10 @@
   --button-background: #ff0000;
   --button-color: #f0f0f0;
   --back-button-color: #222;
+  --close-button-color: #222;
 
   /* Nav Variables*/
-  --nav-background: var(--background-color);
+  --nav-background: var(--body-background);
   --nav-text-color: var(--text-color);
   --nav-height: 75px;
 
@@ -118,6 +119,7 @@
   --button-background: #e74c3c;
   --button-color: #ffffff;
   --back-button-color: #708e9f;
+  --close-button-color: #ffffff;
 
   /* Nav Variables*/
   --nav-background: #0c0c0e;
