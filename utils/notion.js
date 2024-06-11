@@ -64,8 +64,8 @@ async function getPages(id, parentId = null) {
             title: `${page.icon?.emoji || "📄"} ${page.properties.title?.title[0].plain_text || "Untitled"}`,
             description: page.properties.description?.rich_text[0]?.plain_text || "No description",
             tag: {
-                name: page.properties.tag?.select.name || "Unnamed",
-                color: page.properties.tag?.select.color || "gray",
+                name: page.properties.tag?.select?.name || "Unnamed",
+                color: page.properties.tag?.select?.color || "gray",
             },
             url: id ? `${AVAILABLE_PAGES.notes.url}/${parentId || id}/${page.id}` : `${AVAILABLE_PAGES.notes.url}/${page.id}`,
         })).sort((a, b) => {
