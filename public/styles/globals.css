@@ -72,7 +72,7 @@
 }
 
 #light_icon {
-  display: block;
+  display: flex;
 }
 
 .dark {
@@ -83,13 +83,14 @@
   --accent-color: #e74c3c;
   --accent-color-dark: #f84116;
   --text-color: #fff;
-  --text-color-light: #eee;
+  --text-color-light: #ddd;
   --body-background: #0c0c0e;
-  --input-background: #25272c;
+  --input-background: #32343a;
   --background-color: #1a1b1e;
 
   --heart-color: #f84116;
   --arrow-color: #ffffff;
+  --social-icon-color: #ffffff;
 
   --green-color: #27ae60;
   --red-color: #c0392b;
@@ -142,7 +143,7 @@
 
   /* Set Icon Display */
   #dark_icon {
-    display: block;
+    display: flex;
   }
 
   #light_icon {

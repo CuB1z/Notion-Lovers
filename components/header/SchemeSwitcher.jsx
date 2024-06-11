@@ -20,8 +20,12 @@ export default function SchemeSwitcher() {
                 className={`${styles.scheme_switcher_button}`}
                 onClick={handleSchemeChange}
             >
-                <span id="light_icon">🌞</span>
-                <span id="dark_icon">🌙</span>
+                <div className={styles.icon} id="light_icon">
+                    <img className={styles.img} src="/assets/sun.svg" alt="Sun" />
+                </div>
+                <div className={styles.icon} id="dark_icon">
+                    <img className={styles.img} src="/assets/moon.svg" alt="Moon" />
+                </div>
             </button>
         </div>
     )

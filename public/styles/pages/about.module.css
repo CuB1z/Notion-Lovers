@@ -17,6 +17,7 @@
 .p {
     margin: 0;
     padding-right: 1.5rem;
+    color: var(--text-color-light);
     font-size: 1.4rem;
     line-height: 1.6;
 }

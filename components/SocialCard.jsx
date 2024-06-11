@@ -1,4 +1,6 @@
 import styles from "@styles/components/SocialCard.module.css"
+import LinkedIn from "@components/svg/LinkedIn"
+import GitHub from "@components/svg/GitHub"
 
 export default function SocialCard({ name, github, linkedin}) {
     return (
@@ -6,18 +8,10 @@ export default function SocialCard({ name, github, linkedin}) {
             <h1 className={styles.h1}>{name}</h1>
             <div className={styles.links}>
                 <a className={styles.link_element} href={linkedin} target="_blank">
-                    <img
-                        className={styles.img}
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-                        alt={"Linkedin Logo"}
-                    />
+                    <LinkedIn />
                 </a>
                 <a className={styles.link_element} href={github} target="_blank">
-                    <img
-                        className={styles.img}
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                        alt={"GitHub Logo"}
-                    />
+                    <GitHub />
                 </a>
             </div>
         </section>
