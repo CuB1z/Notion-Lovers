@@ -186,6 +186,25 @@ a {
 }
 
 /* Notion Modified Classes*/
+pre {
+	font-family: sans-serif !important;
+	background: none;
+	max-width: 600px;
+	border-radius: 5px;
+}
+
+@media (width < 768px) {
+	pre {
+		max-width: 400px !important;
+	}
+}
+
+@media (width < 450px) {
+	pre {
+		max-width: 250px !important;
+	}
+}
+
 .notion {
 	color: var(--text-color);
 
