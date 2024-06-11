@@ -99,7 +99,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (width <= 850px) {
     .ul {
         display: none;
     }
@@ -111,5 +111,11 @@
 
     .a {
         gap: 5px;
+    }
+}
+
+@media (width > 850px) {
+    .ul.mobile {
+        display: none;
     }
 }

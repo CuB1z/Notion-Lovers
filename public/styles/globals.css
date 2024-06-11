@@ -60,6 +60,82 @@
   --black: #000000;
 }
 
+/* Set Icon Display */
+#dark_icon {
+  display: none;
+}
+
+#light_icon {
+  display: block;
+}
+
+.dark {
+  /* Color Variables */
+  --primary-color: #2c3e50;
+  --light-primary: #34495e;
+  --dark-primary: #1a252f;
+  --accent-color: #e74c3c;
+  --accent-color-dark: #c0392b;
+  --text-color: #ecf0f1;
+  --text-color-light: #bdc3c7;
+  --background-color: #2c3e50;
+
+  --green-color: #27ae60;
+  --red-color: #c0392b;
+  --blue-color: #2980b9;
+  --yellow-color: #f39c12;
+  --purple-color: #8e44ad;
+  --orange-color: #d35400;
+  --gray-color: #7f8c8d;
+  --pink-color: #e84393;
+  --brown-color: #795548;
+  --default-color: #95a5a6;
+
+  /* Sidebar Variables */
+  --sidebar-width: 300px;
+  --sidebar-margin: 20px;
+  --sidebar-background: #34495e;
+  --sidebar-border: 1px solid #2c3e50;
+  --sidebar-border-color: #2c3e50;
+  --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  --sidebar-text-color: var(--text-color);
+
+  --sidebanner-width: 300px;
+
+  /* Button Variables */
+  --button-background: #e74c3c;
+  --button-color: #2c3e50;
+
+  --button-background-hover: #2c3e50;
+  --button-color-hover: #e74c3c;
+
+  /* Nav Variables*/
+  --nav-background: var(--background-color);
+  --nav-text-color: var(--text-color);
+  --nav-height: 75px;
+
+  /* Footer Variables */
+  --footer-background: #1a252f;
+  --footer-text-color: #ecf0f1;
+  --footer-height: 100px;
+
+  /* Home Variables */
+  --home-background: #34495e;
+
+  /* General Colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Set Icon Display */
+  #dark_icon {
+    display: block;
+  }
+
+  #light_icon {
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,7 +146,7 @@
 }
 
 body {
-  background-color: #e8e8e8;
+  background-color: var(--background-color);
   background-image: url("/assets/background.png");
   background-attachment: fixed;
   color: var(--text-color);

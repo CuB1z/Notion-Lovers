@@ -36,4 +36,4 @@ export const metadata = {
 }
 
 export const CACHE_LIFE_TIME = 1000 * 60 * 2
-export const MOBILE_BREAKPOINT = 768
+export const MOBILE_BREAKPOINT = 850

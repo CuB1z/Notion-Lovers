@@ -1,4 +1,4 @@
-import styles from "@styles/components/CloseButton.module.css"
+import styles from "@styles/components/header/CloseButton.module.css"
 
 export default function CloseButton({ isOpen, onClick }) {
     return (

@@ -1,11 +1,10 @@
 "use client"
-import { SITE_TITLE } from "@/utils/constants"
-import styles from "@styles/components/Header.module.css"
-import { useState, useContext } from "react"
-import { MobileContext } from "@/providers/MobileProvider"
-import { AVAILABLE_PAGES } from "@/utils/constants"
+import styles from "@styles/components/header/Header.module.css"
+import { useState } from "react"
+import { SITE_TITLE, AVAILABLE_PAGES } from "@/utils/constants"
 import HeaderLink from "@components/header/HeaderLink"
 import CloseButton from "@components/header/CloseButton"
+import SchemeSwitcher from "@components/header/SchemeSwitcher"
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -16,6 +15,7 @@ export default function Header() {
         <HeaderLink href={AVAILABLE_PAGES.notes.url}>Apuntes</HeaderLink>
         <HeaderLink href={AVAILABLE_PAGES.contribute.url}>Contribuir</HeaderLink>
         <HeaderLink href={AVAILABLE_PAGES.about.url}>Acerca de</HeaderLink>
+        <SchemeSwitcher />
     </>
 
     return (
@@ -28,7 +28,7 @@ export default function Header() {
                     </a>
                 </h1>
                 <CloseButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-                <ul className={`${styles.ul} ${isOpen ? styles.open : ""}`}>
+                <ul className={styles.ul}>
                     {headerLinks}
                 </ul>
                 <ul className={`${styles.ul} ${isOpen ? styles.open : ""} ${styles.mobile}`}>

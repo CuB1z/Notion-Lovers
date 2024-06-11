@@ -1,5 +1,5 @@
 "use client"
-import styles from "@styles/components/HeaderLink.module.css"
+import styles from "@styles/components/header/HeaderLink.module.css"
 import { usePathname } from "next/navigation"
 import { useContext } from "react"
 import { MobileContext } from "@/providers/MobileProvider"

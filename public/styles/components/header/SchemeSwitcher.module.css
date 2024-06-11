@@ -1,0 +1,22 @@
+
+.scheme_switcher {
+    position: relative;
+    width: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheme_switcher_button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+}
