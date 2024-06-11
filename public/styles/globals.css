@@ -1,201 +1,217 @@
 :root {
-  /* Global Variables */
-  --max-width: 1200px;
-  --max-content-width: 800px;
+	/* Global Variables */
+	--max-width: 1200px;
+	--max-content-width: 800px;
 
-  /* Color Variables */
-  --primary-color: #537178;
-  --light-primary: #e1e8ed;
-  --dark-primary: #27323b;
-  --accent-color: #ff0000;
-  --accent-color-dark: #6d2121;
-  --text-color: #000000;
-  --text-color-light: #333333;
-  --body-background: #f7f7f7;
-  --input-background: #ececec;
-  --background-color: #f0f0f0;
+	/* Color Variables */
+	--primary-color: #537178;
+	--light-primary: #e1e8ed;
+	--dark-primary: #27323b;
+	--accent-color: #ff0000;
+	--accent-color-dark: #6d2121;
+	--text-color: #000000;
+	--text-color-light: #333333;
+	--body-background: #f7f7f7;
+	--input-background: #ececec;
+	--background-color: #f0f0f0;
 
-  --green-color: #dbeddb;
-  --red-color: #ffe2dd;
-  --blue-color: #d3e5ef;
-  --yellow-color: #fdecc8;
-  --purple-color: #e8deee;
-  --orange-color: #fadec9;
-  --gray-color: #e3e2e0;
-  --pink-color: #ffc0cbbf;
-  --brown-color: #eee0da;
-  --default-color: #e9e8e7;
+	--green-color: #dbeddb;
+	--red-color: #ffe2dd;
+	--blue-color: #d3e5ef;
+	--yellow-color: #fdecc8;
+	--purple-color: #e8deee;
+	--orange-color: #fadec9;
+	--gray-color: #e3e2e0;
+	--pink-color: #ffc0cbbf;
+	--brown-color: #eee0da;
+	--default-color: #e9e8e7;
 
-  --heart-color: #111;
-  --arrow-color: #111;
+	--heart-color: #111;
+	--arrow-color: #111;
 
-  /* Sidebar Variables */
-  --sidebar-width: 300px;
-  --sidebar-margin: 20px;
-  --sidebar-background: #f0f0f0;
-  --sidebar-border: 1px solid #dadada;
-  --sidebar-border-color: #dadada;
-  --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  --sidebar-text-color: var(--text-color);
+	/* Sidebar Variables */
+	--sidebar-width: 300px;
+	--sidebar-margin: 20px;
+	--sidebar-background: #f0f0f0;
+	--sidebar-border: 1px solid #dadada;
+	--sidebar-border-color: #dadada;
+	--sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	--sidebar-text-color: var(--text-color);
 
-  --sidebanner-width: 300px;
+	--sidebanner-width: 300px;
 
-  /* Button Variables */
-  --button-background: #ff0000;
-  --button-color: #f0f0f0;
-  --back-button-color: #222;
-  --close-button-color: #222;
+	/* Button Variables */
+	--button-background: #ff0000;
+	--button-color: #f0f0f0;
+	--back-button-color: #222;
+	--close-button-color: #222;
 
-  /* Nav Variables*/
-  --nav-background: var(--body-background);
-  --nav-text-color: var(--text-color);
-  --nav-height: 75px;
+	/* Nav Variables*/
+	--nav-background: var(--body-background);
+	--nav-text-color: var(--text-color);
+	--nav-height: 75px;
 
-  /* Footer Variables */
-  --footer-background: #000000;
-  --footer-text-color: #ffffff;
-  --footer-height: 100px;
+	/* Footer Variables */
+	--footer-background: #000000;
+	--footer-text-color: #ffffff;
+	--footer-height: 100px;
 
-  /* Auxiliar Variables */
-  --border-color: #ccc;
+	/* Auxiliar Variables */
+	--border-color: #ccc;
 
-  /* Notion Colors */
-  --notion-gray_background_co: #7f82840a;
+	/* Notion Colors */
+	--notion-gray_background_co: #7f82840a;
 
-  /* General Colors */
-  --white: #ffffff;
-  --black: #000000;
+	/* General Colors */
+	--white: #ffffff;
+	--black: #000000;
 }
 
 /* Set Icon Display */
 #dark_icon {
-  display: none;
+	display: none;
 }
 
 #light_icon {
-  display: flex;
+	display: flex;
 }
 
 .dark {
-  /* Color Variables */
-  --primary-color: #83b6d6;
-  --light-primary: #34495e;
-  --dark-primary: #1a252f;
-  --accent-color: #e74c3c;
-  --accent-color-dark: #f84116;
-  --text-color: #fff;
-  --text-color-light: #ddd;
-  --body-background: #0c0c0e;
-  --input-background: #32343a;
-  --background-color: #1a1b1e;
+	/* Color Variables */
+	--primary-color: #83b6d6;
+	--light-primary: #34495e;
+	--dark-primary: #1a252f;
+	--accent-color: #e74c3c;
+	--accent-color-dark: #f84116;
+	--text-color: #fff;
+	--text-color-light: #ddd;
+	--body-background: #0c0c0e;
+	--input-background: #32343a;
+	--background-color: #1a1b1e;
 
-  --heart-color: #f84116;
-  --arrow-color: #ffffff;
-  --social-icon-color: #ffffff;
+	--heart-color: #f84116;
+	--arrow-color: #ffffff;
+	--social-icon-color: #ffffff;
 
-  --green-color: #27ae60;
-  --red-color: #c0392b;
-  --blue-color: #2980b9;
-  --yellow-color: #f39c12;
-  --purple-color: #8e44ad;
-  --orange-color: #d35400;
-  --gray-color: #7f8c8d;
-  --pink-color: #e84393;
-  --brown-color: #795548;
-  --default-color: #95a5a6;
+	--green-color: #27ae60;
+	--red-color: #c0392b;
+	--blue-color: #2980b9;
+	--yellow-color: #f39c12;
+	--purple-color: #8e44ad;
+	--orange-color: #d35400;
+	--gray-color: #7f8c8d;
+	--pink-color: #e84393;
+	--brown-color: #795548;
+	--default-color: #95a5a6;
 
-  /* Sidebar Variables */
-  --sidebar-width: 300px;
-  --sidebar-margin: 20px;
-  --sidebar-background: #333;
-  --sidebar-border: 1px solid #222;
-  --sidebar-border-color: #ffffff;
-  --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  --sidebar-text-color: var(--text-color);
+	/* Sidebar Variables */
+	--sidebar-width: 300px;
+	--sidebar-margin: 20px;
+	--sidebar-background: #333;
+	--sidebar-border: 1px solid #222;
+	--sidebar-border-color: #ffffff;
+	--sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	--sidebar-text-color: var(--text-color);
 
-  --sidebanner-width: 300px;
+	--sidebanner-width: 300px;
 
-  /* Button Variables */
-  --button-background: #e74c3c;
-  --button-color: #ffffff;
-  --back-button-color: #708e9f;
-  --close-button-color: #ffffff;
+	/* Button Variables */
+	--button-background: #e74c3c;
+	--button-color: #ffffff;
+	--back-button-color: #708e9f;
+	--close-button-color: #ffffff;
 
-  /* Nav Variables*/
-  --nav-background: #0c0c0e;
-  --nav-text-color: var(--text-color);
-  --nav-height: 75px;
+	/* Nav Variables*/
+	--nav-background: #0c0c0e;
+	--nav-text-color: var(--text-color);
+	--nav-height: 75px;
 
-  /* Footer Variables */
-  --footer-background: #101012;
-  --footer-text-color: #ecf0f1;
-  --footer-height: 100px;
+	/* Footer Variables */
+	--footer-background: #151618;
+	--footer-text-color: #ecf0f1;
+	--footer-height: 100px;
 
-  /* Auxiliar Variables */
-  --border-color: #191a1b;
+	/* Auxiliar Variables */
+	--border-color: #191a1b;
 
-  /* Notion Colors */
-  --notion-gray_background_co: #ebeced0a;
-  --fg-color: #ccc;
-  --fg-color-0: #191a1b64;
+	/* Notion Colors */
+	--notion-gray_background_co: #ebeced0a;
+	--fg-color: #ccc;
+	--fg-color-0: #191a1b64;
 
-  /* General Colors */
-  --white: #ffffff;
-  --black: #000000;
+	/* General Colors */
+	--white: #ffffff;
+	--black: #000000;
 
-  /* Set Icon Display */
-  #dark_icon {
-    display: flex;
-  }
+	/* Set Icon Display */
+	#dark_icon {
+		display: flex;
+	}
 
-  #light_icon {
-    display: none;
-  }
+	#light_icon {
+		display: none;
+	}
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scrollbar-width: thin;
-  scroll-behavior: smooth;
-  font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scroll-behavior: smooth;
+	font-family: sans-serif;
 }
 
 body {
-  background-color: var(--body-background);
-  background-attachment: fixed;
-  color: var(--text-color);
+	background-color: var(--body-background);
+	background-attachment: fixed;
+	color: var(--text-color);
 }
 
 a {
-  text-decoration: none;
-  color: var(--text-color);
+	text-decoration: none;
+	color: var(--text-color);
 }
 
 /* Notion Modified Classes*/
 .notion {
-  color: var(--text-color);
+	color: var(--text-color);
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.notion-h-title {
+		font-size: 25px;
+	}
+}
+
+.notion-page {
+	padding: 0;
 }
 
 .notion-file-info,
 .notion-file-link {
-  width: 100%;
+	width: 100%;
 }
 
 .notion-page-link {
-  margin: 10px 0;
+	margin: 10px 0;
 }
 
 .notion-file-title {
-  white-space: normal;
+	white-space: normal;
 }
 
 .notion-quote {
-  font-size: medium;
-  margin: 15px 0;
+	font-size: medium;
+	margin: 15px 0;
 }
 
 .notion-callout {
-  margin: 15px 0;
+	margin: 15px 0;
 }
