@@ -21,7 +21,7 @@
 	position: absolute;
 	bottom: 2rem;
 	left: calc(50% - 25px);
-	animation: scroll 2s infinite;
+	animation: scroll 3s infinite;
 }
 
 .img {

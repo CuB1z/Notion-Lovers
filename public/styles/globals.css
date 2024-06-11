@@ -11,6 +11,7 @@
   --accent-color-dark: #6d2121;
   --text-color: #000000;
   --text-color-light: #333333;
+  --body-background: #f7f7f7;
   --background-color: #f0f0f0;
 
   --green-color: #dbeddb;
@@ -23,7 +24,9 @@
   --pink-color: #ffc0cbbf;
   --brown-color: #eee0da;
   --default-color: #e9e8e7;
+
   --heart-color: #111;
+  --arrow-color: #111;
 
   /* Sidebar Variables */
   --sidebar-width: 300px;
@@ -53,8 +56,8 @@
   --footer-text-color: #ffffff;
   --footer-height: 100px;
 
-  /* Home Variables */
-  --home-background: #f0f0f0;
+  /* Auxiliar Variables */
+  --border-color: #ccc;
 
   /* General Colors */
   --white: #ffffff;
@@ -78,9 +81,12 @@
   --accent-color: #e74c3c;
   --accent-color-dark: #c0392b;
   --text-color: #fff;
-  --text-color-light: #bdc3c7;
-  --background-color: #111;
+  --text-color-light: #eee;
+  --body-background: #000000;
+  --background-color: #222222F0;
+
   --heart-color: #c0392b;
+  --arrow-color: #ffffff;
 
   --green-color: #27ae60;
   --red-color: #c0392b;
@@ -96,9 +102,9 @@
   /* Sidebar Variables */
   --sidebar-width: 300px;
   --sidebar-margin: 20px;
-  --sidebar-background: #34495e;
-  --sidebar-border: 1px solid #2c3e50;
-  --sidebar-border-color: #2c3e50;
+  --sidebar-background: #333;
+  --sidebar-border: 1px solid #222;
+  --sidebar-border-color: #ffffff;
   --sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   --sidebar-text-color: var(--text-color);
 
@@ -106,23 +112,20 @@
 
   /* Button Variables */
   --button-background: #e74c3c;
-  --button-color: #2c3e50;
-
-  --button-background-hover: #2c3e50;
-  --button-color-hover: #e74c3c;
+  --button-color: #ffffff;
 
   /* Nav Variables*/
-  --nav-background: var(--background-color);
+  --nav-background: #111;
   --nav-text-color: var(--text-color);
   --nav-height: 75px;
 
   /* Footer Variables */
-  --footer-background: #1a252f;
+  --footer-background: #111;
   --footer-text-color: #ecf0f1;
   --footer-height: 100px;
 
-  /* Home Variables */
-  --home-background: #34495e;
+  /* Auxiliar Variables */
+  --border-color: #222;
 
   /* General Colors */
   --white: #ffffff;
@@ -148,8 +151,7 @@
 }
 
 body {
-  background-color: var(--background-color);
-  background-image: url("/assets/background.png");
+  background-color: var(--body-background);
   background-attachment: fixed;
   color: var(--text-color);
 }
@@ -160,6 +162,10 @@ a {
 }
 
 /* Notion Modified Classes*/
+.notion {
+  color: var(--text-color);
+}
+
 .notion-file-info,
 .notion-file-link {
   width: 100%;
@@ -171,4 +177,9 @@ a {
 
 .notion-quote {
   font-size: medium;
+  margin: 15px 0;
+}
+
+.notion-callout {
+  margin: 15px 0;
 }

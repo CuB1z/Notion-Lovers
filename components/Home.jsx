@@ -1,5 +1,6 @@
 import styles from "@styles/components/Home.module.css"
 import { SITE_TITLE } from "@/utils/constants"
+import Arrow from "@components/svg/Arrow"
 
 export default function Home() {
     return (
@@ -19,11 +20,7 @@ export default function Home() {
                 />
             </div>
             <div className={styles.scroll_down}>
-                <img
-                    className={styles.img}
-                    src={"/assets/arrow.png"}
-                    alt={"Scroll Down Indicator"}
-                />
+                <Arrow size={48}/>
             </div>
         </section>
     )

@@ -1,0 +1,8 @@
+
+.svg {
+    rotate: 180deg;
+}
+
+.path {
+    fill: var(--arrow-color);
+}
