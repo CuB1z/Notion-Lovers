@@ -12,6 +12,7 @@
   --text-color: #000000;
   --text-color-light: #333333;
   --body-background: #f7f7f7;
+  --input-background: #ececec;
   --background-color: #f0f0f0;
 
   --green-color: #dbeddb;
@@ -84,6 +85,7 @@
   --text-color: #fff;
   --text-color-light: #eee;
   --body-background: #0c0c0e;
+  --input-background: #25272c;
   --background-color: #1a1b1e;
 
   --heart-color: #f84116;
@@ -114,7 +116,7 @@
   /* Button Variables */
   --button-background: #e74c3c;
   --button-color: #ffffff;
-  --back-button-color: #9db3c0;
+  --back-button-color: #708e9f;
 
   /* Nav Variables*/
   --nav-background: #0c0c0e;
