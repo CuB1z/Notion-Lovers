@@ -5,6 +5,7 @@ import { SITE_TITLE, AVAILABLE_PAGES } from "@/utils/constants"
 import HeaderLink from "@components/header/HeaderLink"
 import CloseButton from "@components/header/CloseButton"
 import SchemeSwitcher from "@components/header/SchemeSwitcher"
+import HeartIcon from "@/components/svg/HeartIcon"
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -24,7 +25,7 @@ export default function Header() {
                 <h1>
                     <a href={AVAILABLE_PAGES.root.url} className={styles.a}>
                         <span>{SITE_TITLE}</span>
-                        <img className={styles.header_icon} src="/assets/black-heart.svg" alt="Dark Heart" />
+                        <HeartIcon size={20} />
                     </a>
                 </h1>
                 <CloseButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
