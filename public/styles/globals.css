@@ -76,6 +76,10 @@
 	display: flex;
 }
 
+.dark-icon {
+	display: none;
+}
+
 .dark {
 	/* Color Variables */
 	--primary-color: #83b6d6;
@@ -93,22 +97,22 @@
 	--arrow-color: #ffffff;
 	--social-icon-color: #ffffff;
 
-	--green-color: #27ae60;
-	--red-color: #c0392b;
-	--blue-color: #2980b9;
-	--yellow-color: #f39c12;
-	--purple-color: #8e44ad;
-	--orange-color: #d35400;
-	--gray-color: #7f8c8d;
-	--pink-color: #e84393;
-	--brown-color: #795548;
-	--default-color: #95a5a6;
+	--green-color: #dbeddb;
+	--red-color: #ffe2dd;
+	--blue-color: #d3e5ef;
+	--yellow-color: #fdecc8;
+	--purple-color: #e8deee;
+	--orange-color: #fadec9;
+	--gray-color: #e3e2e0;
+	--pink-color: #ffc0cbbf;
+	--brown-color: #eee0da;
+	--default-color: #e9e8e7;
 
 	/* Sidebar Variables */
 	--sidebar-width: 300px;
 	--sidebar-margin: 20px;
-	--sidebar-background: #333;
-	--sidebar-border: 1px solid #222;
+	--sidebar-background: #222326;
+	--sidebar-border: 1px solid #0b0b0d;
 	--sidebar-border-color: #ffffff;
 	--sidebar-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	--sidebar-text-color: var(--text-color);
@@ -149,6 +153,14 @@
 	}
 
 	#light_icon {
+		display: none;
+	}
+
+	.dark-icon {
+		display: flex;
+	}
+
+	.light-icon {
 		display: none;
 	}
 }
