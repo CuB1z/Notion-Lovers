@@ -42,9 +42,7 @@
   /* Button Variables */
   --button-background: #ff0000;
   --button-color: #f0f0f0;
-
-  --button-background-hover: #f0f0f0;
-  --button-color-hover: #ff0000;
+  --back-button-color: #222;
 
   /* Nav Variables*/
   --nav-background: var(--background-color);
@@ -58,6 +56,9 @@
 
   /* Auxiliar Variables */
   --border-color: #ccc;
+
+  /* Notion Colors */
+  --notion-gray_background_co: #7f82840a;
 
   /* General Colors */
   --white: #ffffff;
@@ -75,17 +76,17 @@
 
 .dark {
   /* Color Variables */
-  --primary-color: #c0392b;
+  --primary-color: #83b6d6;
   --light-primary: #34495e;
   --dark-primary: #1a252f;
   --accent-color: #e74c3c;
-  --accent-color-dark: #c0392b;
+  --accent-color-dark: #f84116;
   --text-color: #fff;
   --text-color-light: #eee;
-  --body-background: #000000;
-  --background-color: #222222F0;
+  --body-background: #0c0c0e;
+  --background-color: #1a1b1e;
 
-  --heart-color: #c0392b;
+  --heart-color: #f84116;
   --arrow-color: #ffffff;
 
   --green-color: #27ae60;
@@ -113,19 +114,25 @@
   /* Button Variables */
   --button-background: #e74c3c;
   --button-color: #ffffff;
+  --back-button-color: #9db3c0;
 
   /* Nav Variables*/
-  --nav-background: #111;
+  --nav-background: #0c0c0e;
   --nav-text-color: var(--text-color);
   --nav-height: 75px;
 
   /* Footer Variables */
-  --footer-background: #111;
+  --footer-background: #101012;
   --footer-text-color: #ecf0f1;
   --footer-height: 100px;
 
   /* Auxiliar Variables */
-  --border-color: #222;
+  --border-color: #191a1b;
+
+  /* Notion Colors */
+  --notion-gray_background_co: #ebeced0a;
+  --fg-color: #ccc;
+  --fg-color-0: #191a1b64;
 
   /* General Colors */
   --white: #ffffff;
@@ -169,6 +176,10 @@ a {
 .notion-file-info,
 .notion-file-link {
   width: 100%;
+}
+
+.notion-page-link {
+  margin: 10px 0;
 }
 
 .notion-file-title {

@@ -9,7 +9,7 @@ export default async function GridLayout({ data, title, backUrl }) {
             <main className={styles.main}>
                 <div className={styles.title_section}>
                     <h1>{title}</h1>
-                    <LinkButton url={backUrl} color={"black"}>
+                    <LinkButton url={backUrl} color={"var(--back-button-color)"}>
                         <div className={styles.button_content}>
                             <img src="/assets/back-arrow.svg" alt="Back Arrow" />
                             <span>Volver</span>

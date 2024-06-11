@@ -1,6 +1,7 @@
 import styles from "@styles/Layout.module.css"
 import { metadata as metadataFromConstants } from "@/utils/constants"
 import { SchemeProvider } from "@providers/SchemeProvider"
+import Background from "@components/Background"
 
 export const metadata = metadataFromConstants
 

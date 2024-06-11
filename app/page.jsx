@@ -15,7 +15,7 @@ export default function Page() {
                     image={"/assets/library-urjc.jpeg"}
                     imageSide={"right"}
                 >
-                    <LinkButton url={AVAILABLE_PAGES.root.url}>Ver apuntes</LinkButton>
+                    <LinkButton url={AVAILABLE_PAGES.notes.url}>Ver apuntes</LinkButton>
                 </HomeCard>
                 <HomeCard
                     title={"Repositorio de GitHub"}
