@@ -6,6 +6,6 @@ export default async function Page() {
     const data = await getPages()
 
     return (
-        <GridLayout data={data} title="📚 Contenido" backUrl={AVAILABLE_PAGES.root.url} />
+        <GridLayout data={data} title="📚 Apuntes" backUrl={AVAILABLE_PAGES.root.url} />
     )
 }
