@@ -14,6 +14,7 @@
 	--body-background: #f7f7f7;
 	--input-background: #ececec;
 	--background-color: #f0f0f0;
+	--body-complement: #a5a5a512;
 
 	--green-color: #dbeddb;
 	--red-color: #ffe2dd;
@@ -92,6 +93,7 @@
 	--body-background: #0c0c0e;
 	--input-background: #32343a;
 	--background-color: #1a1b1e;
+	--body-complement: #5f606312;
 
 	--heart-color: #f84116;
 	--arrow-color: #ffffff;
@@ -177,6 +179,8 @@
 body {
 	background-color: var(--body-background);
 	background-attachment: fixed;
+	background-image: linear-gradient(var(--body-complement) 1px, transparent 1px), linear-gradient(to right, var(--body-complement) 1px, var(--body-background) 1px);
+	background-size: 125px 125px;
 	color: var(--text-color);
 }
 
