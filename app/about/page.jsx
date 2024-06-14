@@ -41,10 +41,15 @@ export default function About() {
         estudiantes para estudiantes.
       </p>
       <p className={styles.p}>
-        Nuestra única forma de monetización es a través de pequeños anuncios
-        que se muestran de forma no intrusiva y no molesta. Además,
-        ofrecemos la opción de realizar donaciones para mantener el sitio en
-        línea y mejorar la calidad del contenido.
+        Aunque actualmente no contamos con publicidad ni con ánimo de lucro,
+        y tu experiencia en {SITE_TITLE} es nuestra prioridad, estamos abiertos a
+        colaboraciones con empresas y negocios que estén interesados en implementar
+        sistemas de anuncios que sean beneficiosos para nuestros usuarios y que estén
+        alineados con nuestra misión educativa.
+      </p>
+      <p className={styles.p}>
+        Si te gusta lo que hacemos, considera apoyarnos compartiendo nuestro sitio con
+        tus amigos y compañeros de clase para que podamos llegar a más estudiantes.
       </p>
 
       <h2 className={styles.h2}>¿Quiénes somos?</h2>
