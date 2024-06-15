@@ -8,6 +8,6 @@
       "@utils/*": ["./utils/*"],
       "@layouts/*": ["./layouts/*"],
       "@providers/*": ["./providers/*"],
-    }
+    },
   }
 }
