@@ -1,6 +1,6 @@
 # Notion Lovers ❤️
 
-Welcome to the **Notion Lovers** repository, a project driven by students with the goal of simplifying the sharing of university notes. We are firm believers in the transformative power of shared knowledge, and our mission is to make academic resources universally accessible. 🚀
+Welcome to the **Notion Lovers** repository, a project driven by students with the goal of simplifying the sharing of university notes. We are firm believers in the transformative power of shared knowledge, our mission is to make academic resources universally accessible. 🚀
 
 ## 📚📝 Access the Platform
 
