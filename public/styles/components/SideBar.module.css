@@ -23,11 +23,12 @@
     }
 
     .content {
+        height: inherit;
         display: flex;
         flex-direction: column;
         gap: 10px;
         overflow-y: auto;
-        overflow: hidden;
+        overflow-x: auto;
     }
 
     .back_btn__container {

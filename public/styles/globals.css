@@ -30,6 +30,10 @@
 	--heart-color: #111;
 	--arrow-color: #111;
 
+	/* Scrollbar Variables */
+	--scrollbar-width: thin;
+	--scrollbar-color: #537178 #f7f7f7;
+
 	/* Sidebar Variables */
 	--sidebar-width: 300px;
 	--sidebar-margin: 20px;
@@ -95,10 +99,6 @@
 	--background-color: #1a1b1e;
 	--body-complement: #5f606312;
 
-	--heart-color: #f84116;
-	--arrow-color: #ffffff;
-	--social-icon-color: #ffffff;
-
 	--green-color: #dbeddb;
 	--red-color: #ffe2dd;
 	--blue-color: #d3e5ef;
@@ -109,6 +109,14 @@
 	--pink-color: #ffc0cbbf;
 	--brown-color: #eee0da;
 	--default-color: #e9e8e7;
+
+	--heart-color: #f84116;
+	--arrow-color: #ffffff;
+	--social-icon-color: #ffffff;
+
+	/* Scrollbar Variables */
+	--scrollbar-width: thin;
+	--scrollbar-color: #758e9e #5f606312;
 
 	/* Sidebar Variables */
 	--sidebar-width: 300px;
@@ -171,8 +179,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	scrollbar-width: thin;
 	scroll-behavior: smooth;
+	scrollbar-width: var(--scrollbar-width);
+	scrollbar-color: var(--scrollbar-color);
 	font-family: sans-serif;
 }
 
