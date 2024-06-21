@@ -185,6 +185,7 @@
 	scrollbar-width: var(--scrollbar-width);
 	scrollbar-color: var(--scrollbar-color);
 	font-family: sans-serif;
+	text-wrap: balance;
 }
 
 body {
@@ -272,4 +273,7 @@ pre {
 	overflow-x: auto;
 	max-width: 100%;
 	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 2px;
+	margin-bottom: 10px;
 }
