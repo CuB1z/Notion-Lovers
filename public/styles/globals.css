@@ -266,3 +266,10 @@ pre {
 .notion-callout {
 	margin: 15px 0;
 }
+
+.notion-simple-table {
+	display: block;
+	overflow-x: auto;
+	max-width: 100%;
+	table-layout: fixed;
+}
