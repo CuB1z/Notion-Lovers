@@ -66,6 +66,7 @@
 
 	/* Notion Colors */
 	--notion-gray_background_co: #7f82840a;
+	--notion-gray_background: #7f82840a;
 
 	/* General Colors */
 	--white: #ffffff;
@@ -150,6 +151,7 @@
 
 	/* Notion Colors */
 	--notion-gray_background_co: #ebeced0a;
+	--notion-gray_background: #ebeced0a;
 	--fg-color: #ccc;
 	--fg-color-0: #191a1b64;
 
@@ -238,9 +240,14 @@ pre {
 	padding: 0;
 }
 
-.notion-file-info,
+.notion-file-info {
+	width: 100%;
+}
+
 .notion-file-link {
 	width: 100%;
+	background-color: #626d75;
+	transition: background-color 0.2s;
 }
 
 .notion-page-link {
