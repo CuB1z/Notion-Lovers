@@ -50,7 +50,7 @@
     gap: 20px;
 }
 
-@media (max-width: 1100px) {
+@media (width <= 1150px) {
     .content {
         grid-template-columns: 100%;
         padding: 0;
@@ -58,5 +58,17 @@
 
     .aside {
         display: none;
+    }
+}
+
+@media (width <= 850px) {
+    .main_content {
+        padding: 0 10px;
+    }
+}
+
+@media (width <= 450px) {
+    .main_content {
+        padding: 0 5px;
     }
 }
