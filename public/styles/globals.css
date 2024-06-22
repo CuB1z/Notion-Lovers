@@ -256,6 +256,13 @@ pre {
 	margin: 15px 0;
 }
 
+.notion-callout-text {
+	width: calc(100% - 25px);
+}
+.notion-asset-wrapper-image img {
+	object-fit: scale-down;
+}
+
 .notion-simple-table {
 	display: block;
 	overflow-x: auto;
@@ -294,6 +301,6 @@ pre {
 	}
 
 	.notion-page {
-		padding: 0 2px;
+		padding: 0 5px;
 	}
 }
