@@ -32,7 +32,7 @@
 
 	/* Scrollbar Variables */
 	--scrollbar-width: thin;
-	--scrollbar-color: #537178 #f7f7f7;
+	--scrollbar-color: #bcbcbc #f7f7f7;
 
 	/* Sidebar Variables */
 	--sidebar-width: 300px;
@@ -185,7 +185,6 @@
 	scrollbar-width: var(--scrollbar-width);
 	scrollbar-color: var(--scrollbar-color);
 	font-family: sans-serif;
-	text-wrap: balance;
 }
 
 body {

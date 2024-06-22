@@ -1,10 +1,6 @@
-import { InlineMath } from 'react-katex'
+import { InlineMath, BlockMath } from 'react-katex'
 import 'katex/dist/katex.min.css' // Import KaTeX CSS
 
 export default function Equation({ math, inline }) {
-    if (inline) {
-        return (
-                <InlineMath math={math} />
-        )
-    }
+    return inline ? <InlineMath math={math} /> : <BlockMath math={math} />
 }
