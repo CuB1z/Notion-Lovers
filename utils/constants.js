@@ -33,6 +33,7 @@ export const GITHUB_REPO = "https://github.com/CuB1z/Notion-Lovers"
 export const metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    image: FAVICON_URL,
 }
 
 export const CACHE_LIFE_TIME = 1000 * 60 * 2
