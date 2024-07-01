@@ -17,21 +17,22 @@ export default function Page() {
                 >
                     <LinkButton url={AVAILABLE_PAGES.notes.url}>Ver apuntes</LinkButton>
                 </HomeCard>
-                <HomeCard
-                    title={"Repositorio de GitHub"}
-                    description={"Mantenemos nuestro código fuente abierto a todos los usuarios. De esta forma, ofrecemos transparencia y la posibilidad de colaborar en el proyecto."}
-                    image={"/assets/github-bg.jpeg"}
-                    imageSide={"left"}
-                >
-                    <LinkButton url={GITHUB_REPO} target={"_blank"}>Ir al repositorio</LinkButton>
-                </HomeCard>
+
                 <HomeCard
                     title={"¿Quieres contribuir?"}
                     description={"Si tienes apuntes o recursos que crees que podrían ser útiles para otros estudiantes, nos encantaría que los compartieras con nosotros. Tu contribución puede marcar una gran diferencia en la experiencia de aprendizaje de alguien."}
                     image={"/assets/contribute-bg.jpg"}
-                    imageSide={"right"}
+                    imageSide={"left"}
                 >
                     <LinkButton url={AVAILABLE_PAGES.contribute.url}>Contribuir</LinkButton>
+                </HomeCard>
+                <HomeCard
+                    title={"Repositorio de GitHub"}
+                    description={"Mantenemos nuestro código fuente abierto a todos los usuarios. De esta forma, ofrecemos transparencia y la posibilidad de colaborar en el proyecto."}
+                    image={"/assets/github-bg.jpeg"}
+                    imageSide={"right"}
+                >
+                    <LinkButton url={GITHUB_REPO} target={"_blank"}>Ir al repositorio</LinkButton>
                 </HomeCard>
             </>
         </Layout>
