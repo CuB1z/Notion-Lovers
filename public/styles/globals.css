@@ -210,18 +210,25 @@ pre {
 	border-radius: 5px;
 }
 
+.katex-display .katex-html {
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5px;
+}
 
 .notion {
 	color: var(--text-color);
-	
+
 	h1 {
 		font-size: 30px;
 	}
-	
+
 	h2 {
 		font-size: 25px;
 	}
-	
+
 	.notion-h-title {
 		font-size: 25px;
 	}
@@ -261,6 +268,7 @@ pre {
 .notion-callout-text {
 	width: calc(100% - 25px);
 }
+
 .notion-asset-wrapper-image img {
 	object-fit: scale-down;
 }
@@ -292,11 +300,11 @@ pre {
 		h1 {
 			font-size: 25px;
 		}
-		
+
 		h2 {
 			font-size: 20px;
 		}
-		
+
 		.notion-h-title {
 			font-size: 20px;
 		}
