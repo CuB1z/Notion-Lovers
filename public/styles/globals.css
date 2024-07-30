@@ -46,10 +46,10 @@
 	--sidebanner-width: 300px;
 
 	/* Button Variables */
-	--button-background: #ff0000;
+	--button-background: #d04b22;
 	--button-background-secondary: #f7f7f7;
 	--button-color: #f0f0f0;
-	--button-color-secondary: #ff0000;
+	--button-color-secondary: #d04b22;
 	--back-button-color: #222;
 	--close-button-color: #222;
 
@@ -135,7 +135,7 @@
 	--sidebanner-width: 300px;
 
 	/* Button Variables */
-	--button-background: #e74c3c;
+	--button-background: #d04b22;
 	--button-background-secondary: #2d0d0f;
 	--button-color: #ffffff;
 	--button-color-secondary: #ffffff;
