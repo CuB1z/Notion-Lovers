@@ -64,7 +64,7 @@
 }
 
 .ul.mobile.open {
-    transform: translateX(0);
+    transform: translateX(20px);
 }
 
 .button {
