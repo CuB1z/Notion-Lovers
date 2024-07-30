@@ -47,6 +47,15 @@
 	font-weight: 500;
 	line-height: 1.5;
 	word-spacing: 2px;
+	margin-bottom: 1rem;
+}
+
+.button_section {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
 }
 
 @keyframes scroll {
@@ -67,6 +76,7 @@
 	.h1 {
 		font-size: 4rem;
 	}
+
 	.p {
 		font-size: 1.2rem;
 	}
@@ -94,7 +104,10 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+	}
 
+	.button_section {
+		justify-content: center;
 	}
 
 	.img.logo {
@@ -112,10 +125,12 @@
 	.text_section {
 		padding: 0 1rem;
 	}
+
 	.h1 {
 		padding-right: 1rem;
 		font-size: 13vw;
 	}
+
 	.p {
 		font-size: 1rem;
 	}

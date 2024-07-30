@@ -47,7 +47,9 @@
 
 	/* Button Variables */
 	--button-background: #ff0000;
+	--button-background-secondary: #f7f7f7;
 	--button-color: #f0f0f0;
+	--button-color-secondary: #ff0000;
 	--back-button-color: #222;
 	--close-button-color: #222;
 
@@ -134,7 +136,9 @@
 
 	/* Button Variables */
 	--button-background: #e74c3c;
+	--button-background-secondary: #2d0d0f;
 	--button-color: #ffffff;
+	--button-color-secondary: #ffffff;
 	--back-button-color: #708e9f;
 	--close-button-color: #ffffff;
 
