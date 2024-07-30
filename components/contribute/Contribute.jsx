@@ -1,5 +1,6 @@
 import styles from "@styles/components/contribute/Contribute.module.css"
 import ContributeForm from "@components/contribute/ContributeForm"
+import Image from "next/image"
 
 export default function Contribute() {
     return (
@@ -11,7 +12,13 @@ export default function Contribute() {
 
                 <div className={styles.title}>
                     <div className={styles.img_container}>
-                        <img className={styles.img} src="/assets/notion.svg" alt="Notion" />
+                        <Image
+                            className={styles.img}
+                            src="/assets/notion.svg"
+                            alt="Notion"
+                            width={50}
+                            height={50}
+                        />
                     </div>
                     <h2 className={styles.h2}>Notion</h2>
                 </div>
@@ -22,7 +29,13 @@ export default function Contribute() {
 
                 <div className={styles.title}>
                     <div className={styles.img_container}>
-                        <img className={styles.img} src="/assets/markdown.svg" alt="Markdown" />
+                        <Image
+                            className={styles.img}
+                            src="/assets/markdown.svg"
+                            alt="Markdown"
+                            width={50}
+                            height={50}
+                        />
                     </div>
                     <h2 className={styles.h2}>Texto Plano / Markdown</h2>
                 </div>

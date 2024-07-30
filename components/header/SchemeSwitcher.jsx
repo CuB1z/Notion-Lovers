@@ -1,5 +1,6 @@
 import styles from "@styles/components/header/SchemeSwitcher.module.css"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 
 export default function SchemeSwitcher() {
     const { theme, setTheme } = useTheme()
@@ -21,10 +22,22 @@ export default function SchemeSwitcher() {
                 onClick={handleSchemeChange}
             >
                 <div className={styles.icon} id="light_icon">
-                    <img className={styles.img} src="/assets/sun.svg" alt="Sun" />
+                    <Image
+                        className={styles.img}
+                        src="/assets/sun.svg"
+                        alt="Sun"
+                        width={25}
+                        height={25}
+                    />
                 </div>
                 <div className={styles.icon} id="dark_icon">
-                    <img className={styles.img} src="/assets/moon.svg" alt="Moon" />
+                    <Image
+                        className={styles.img}
+                        src="/assets/moon.svg"
+                        alt="Moon"
+                        width={25}
+                        height={25}
+                    />
                 </div>
             </button>
         </div>
