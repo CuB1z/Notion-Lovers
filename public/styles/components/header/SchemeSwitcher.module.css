@@ -1,8 +1,6 @@
-
 .scheme_switcher {
     position: relative;
     width: 25px;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -53,6 +53,7 @@
 
 	/* Nav Variables*/
 	--nav-background: var(--body-background);
+	--nav-border: 2px solid #eee;
 	--nav-text-color: var(--text-color);
 	--nav-height: 75px;
 
@@ -139,6 +140,7 @@
 
 	/* Nav Variables*/
 	--nav-background: #0c0c0e;
+	--nav-border: 2px solid #151518;
 	--nav-text-color: var(--text-color);
 	--nav-height: 75px;
 
