@@ -1,0 +1,43 @@
+{
+    "name": "Notion Lovers",
+    "short_name": "Notion Lovers",
+    "description": "Bienvendio a Notion Lovers, un lugar para compartir apuntes y conocimientos universitarios. ¡Únete a la comunidad!",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#983030",
+    "background_color": "#ffffff",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/heart-16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/heart-32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/heart-64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/heart-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/heart-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/heart-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
