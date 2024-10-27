@@ -2,7 +2,9 @@
 export const DEBUG_MODE = process.env.NODE_ENV === "development"
 
 export const SITE_TITLE = "Notion Lovers"
-export const SITE_DESCRIPTION = "Bienvendio a Notion Lovers, un lugar para compartir apuntes y conocimientos universitarios."
+export const AUTHOR = "CuB1z"
+export const SITE_DESCRIPTION = "Bienvendio a Notion Lovers, un lugar para compartir apuntes y conocimientos universitarios. ¡Únete a la comunidad!"
+export const KEYWORDS = "Notion, Notion Lovers, Universidad, Apuntes, Conocimientos, Estudiantes, Comunidad, Ingeniería Software, URJC, Universidad Rey Juan Carlos, Madrid, España"
 export const FAVICON_URL = "/assets/heart.svg"
 
 export const AVAILABLE_PAGES = {
@@ -30,9 +32,11 @@ export const AVAILABLE_PAGES = {
 
 export const GITHUB_REPO = "https://github.com/CuB1z/Notion-Lovers"
 
-export const metadata = {
+export const METADATA = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    keyWords: KEYWORDS,
+    author: AUTHOR,
     image: FAVICON_URL,
 }
 
