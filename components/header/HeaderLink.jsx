@@ -21,8 +21,10 @@ export default function HeaderLink({ href, children }) {
     }
 
     return (
-        <a className={`${styles.a} ${activeStyle} ${isMobile ? styles.mobile : ""}`} href={href}>
-            {children}
-        </a>
+        <li className={`${styles.link} ${activeStyle} ${isMobile ? styles.mobile : ""}`}>
+            <a className={styles.a} href={href}>
+                {children}
+            </a>
+        </li>
     )
 }

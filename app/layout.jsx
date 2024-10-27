@@ -21,7 +21,15 @@ export default function RootLayout({ children }) {
 				<meta name="application-name" content={metadata.title} />
 				<meta name="msapplication-TileColor" content="#f32121" />
 				<meta name="mobile-web-app-capable" content="yes" />
+				<meta name="og:image" content={metadata.image} />
+				<meta name="og:title" content={metadata.title} />
+				<meta name="og:description" content={metadata.description} />
+				<meta name="og:type" content="website" />
+				<meta name="og:url" content={metadata.url} />
+				<meta name="og:site_name" content={metadata.title} />
+				<meta name="og:locale" content="es_ES" />
 				<meta rel="manifest" href="/manifest.json" />
+				<title>{metadata.title}</title>
 			</head>
 			<body className={styles.body}>
 				<SchemeProvider>

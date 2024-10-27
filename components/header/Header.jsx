@@ -32,9 +32,11 @@ export default function Header() {
                 <ul className={styles.ul}>
                     {headerLinks}
                 </ul>
-                <ul className={`${styles.ul} ${isOpen ? styles.open : ""} ${styles.mobile}`}>
-                    {headerLinks}
-                </ul>
+                {isOpen && (
+                    <ul className={`${styles.ul} ${isOpen ? styles.open : ""} ${styles.mobile}`}>
+                        {headerLinks}
+                    </ul>
+                )}
             </nav>
         </header>
     )
