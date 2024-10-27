@@ -7,7 +7,7 @@ export const SITE_DESCRIPTION = "Bienvendio a Notion Lovers, un lugar para compa
 export const KEYWORDS = "Notion, Notion Lovers, Universidad, Apuntes, Conocimientos, Estudiantes, Comunidad, Ingeniería Software, URJC, Universidad Rey Juan Carlos, Madrid, España"
 export const FAVICON = "/assets/heart.svg"
 export const IMAGE = "/assets/preview.jpeg"
-export const TWITTER_IMAGE = "/heart-256.png"
+export const TWITTER_IMAGE = "/heart-128.png"
 export const URL = "https://notionlovers.vercel.app"
 
 export const AVAILABLE_PAGES = {

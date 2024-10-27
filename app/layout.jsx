@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 				<meta name="twitter:image" content={metadata.twitterImage} />
 				<meta name="twitter:title" content={metadata.title} />
 				<meta name="twitter:description" content={metadata.description} />
-				<meta rel="manifest" href="/manifest.json" />
+				<link rel="manifest" href="/manifest.json" />
 				<title>{metadata.title}</title>
 			</head>
 			<body className={styles.body}>
