@@ -28,6 +28,10 @@ export default function RootLayout({ children }) {
 				<meta name="og:url" content={metadata.url} />
 				<meta name="og:site_name" content={metadata.title} />
 				<meta name="og:locale" content="es_ES" />
+				<meta name="twitter:card" content="app" />
+				<meta name="twitter:image" content={metadata.image} />
+				<meta name="twitter:title" content={metadata.title} />
+				<meta name="twitter:description" content={metadata.description} />
 				<meta rel="manifest" href="/manifest.json" />
 				<title>{metadata.title}</title>
 			</head>
