@@ -44,7 +44,7 @@ To contribute, please send us your notes through our submission form on the plat
 | ------------- | -------------------------------------------- | ----------------------------------------------------------- | ----------- |
 | Diego Sánchez | [@CuB1z](https://github.com/CuB1z)           | [Diego Sánchez](https://www.linkedin.com/in/cub1z/)         | Developer   |
 | Jaime Portillo| [@PortiESP](https://github.com/PortiESP)     | [Jaime Portillo](https://www.linkedin.com/in/porti/)        | Contributor |
-| Daniel Santos | [@danisntoss](https://github.com/danisntoss) | [Daniel Santos ](https://www.linkedin.com/in/danisantos15/) | Contributor |
+| Daniel Santos | [@danisntoss](https://github.com/danisntoss) | [Daniel Santos](https://www.linkedin.com/in/danisntoss/)    | Contributor |
 
 ----
 
