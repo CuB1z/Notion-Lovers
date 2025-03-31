@@ -4,7 +4,7 @@ Welcome to the **Notion Lovers** repository, a project driven by students with t
 
 ## 📚📝 Access the Platform
 
-Ready to share knowledge and learn from others? [Access Notion Lovers here](https://notion-lovers.vercel.app/) 🎓🚀
+Ready to share knowledge and learn from others? [Access Notion Lovers here](https://notionlovers.vercel.app/) 🎓🚀
 
 ## 👥🤝 Meet the Team
 
